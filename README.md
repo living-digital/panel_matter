@@ -1,60 +1,24 @@
-# Hola Mundo
-
-## Info.
-
-Hola mundo para la placa de entrenamiento ESP32-S3-LCD-EV-Board con encapsulado ESP32-S3-WROOM-1-N16R8. Baseado en software proporcionado por el fabricante: https://gitee.com/hemukeji/esp32-s3-4inch-001-sdk
-
-## Versiones
-esp-idf v5.1.2 -> Una version superior no funcionara
-
-lvgl v8.3.11
-
-## Especificaciones placa
-
-CHIP: Xtensa LX7
-
-NUCLEOS: 2
-
-MODELO: ESP32-S3 (QFN56) v0.2 
-
-FLASH: 16MB
+# panel_matter
+Este proyecto permite conectar un ESP32 con display de 4" a una red WiFi, tambien trabajaremos con esp-matter (fork de Matter especifico para esta plataforma) para la conectividad de dispositivos IOT, todo ello con una interfaz generada con lvgl
 
 
-PSRAM: 8MB
+## Requisitos previos:
 
-WIFI: si
+ESP-IDF instalado (v5.0 o superior recomendado)
 
-BLUETOOTH LE(BLE): si
+Cable USB para flashear el ESP32
 
-FREQ. CRISTAL: 40Mhz
-
-
-## Especificaciones display
-
- Size:4"
-
- Pines: 40
-
- Res: 800x480
-
- Interfaz: RGB
-
- Controlador: ST7701S
- 
- Controlador (Touch): GT911/GFF
+Red WiFi de 2.4 GHz (el ESP32 no es compatible con redes de 5 GHz)
 
 
-## Imagen
+## Notas:
 
-<table>
-    <tr>
-        <td><img src="https://github.com/living-digital/ESP32-s3_HolaMundo/blob/main/IMG/1.jpg" width="200"></td>
-        <td><img src="https://github.com/living-digital/ESP32-s3_HolaMundo/blob/main/IMG/2.jpg" width="200"></td>
-        <td><img src="https://github.com/living-digital/ESP32-s3_HolaMundo/blob/main/IMG/3.jpg" width="200"></td>
-    </tr>
-    <tr>
-        <td><img src="https://github.com/living-digital/ESP32-s3_HolaMundo/blob/main/IMG/4.jpg" width="200"></td>
-        <td><img src="https://github.com/living-digital/ESP32-s3_HolaMundo/blob/main/IMG/5.jpg" width="200"></td>
-        <td><img src="https://github.com/living-digital/ESP32-s3_HolaMundo/blob/main/IMG/6.jpg" width="200"></td>
-    </tr>
-</table>
+Asegúrate de que la red wifi sea visible y opere en la banda de 2.4 GHz
+
+Si estás usando IP fija, evita conflictos con el rango DHCP del router
+
+El sistema intentará reconectarse automáticamente si se pierde la conexión
+
+
+## Notas:
+Desarrollado con ESP-IDF para ESP32-S3
