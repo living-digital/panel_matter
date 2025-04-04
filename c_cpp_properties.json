@@ -1,0 +1,24 @@
+{
+    "configurations": [
+        {
+            "name": "ESP32",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/david/esp/esp-idf/components/freertos/include",
+                "/home/david/esp/esp-idf/components/esp_system/include",
+                "/home/david/esp/esp-idf/components/esp32/include",
+                "/home/david/esp/esp-idf/components/driver/include",
+                "/home/david/esp/esp-idf/components/xtensa/include",
+                "/home/david/esp/esp-idf/components/lvgl/include",
+                "/home/david/esp/esp-idf/components/nvs_flash/include",
+                "/home/david/esp/esp-idf/components/spi_flash/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/xtensa-esp32-elf-gcc",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}

@@ -1,7 +1,7 @@
 # Additional clean files
 cmake_minimum_required(VERSION 3.16)
 
-if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Debug")
+if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "")
   file(REMOVE_RECURSE
   "bootloader/bootloader.bin"
   "bootloader/bootloader.elf"
@@ -14,10 +14,11 @@ if("${CONFIG}" STREQUAL "" OR "${CONFIG}" STREQUAL "Debug")
   "flash_bootloader_args"
   "flash_project_args"
   "flasher_args.json"
-  "hello_world.bin"
-  "hello_world.map"
+  "index_uvc.html.gz.S"
   "ldgen_libraries"
   "ldgen_libraries.in"
+  "lvgl_demo.bin"
+  "lvgl_demo.map"
   "project_elf_src_esp32s3.c"
   "x509_crt_bundle.S"
   )

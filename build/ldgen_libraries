@@ -46,6 +46,7 @@
 /home/david/esp/panel_matter/build/esp-idf/esp_http_client/libesp_http_client.a
 /home/david/esp/panel_matter/build/esp-idf/esp_http_server/libesp_http_server.a
 /home/david/esp/panel_matter/build/esp-idf/esp_https_ota/libesp_https_ota.a
+/home/david/esp/panel_matter/build/esp-idf/esp_psram/libesp_psram.a
 /home/david/esp/panel_matter/build/esp-idf/esp_lcd/libesp_lcd.a
 /home/david/esp/panel_matter/build/esp-idf/protobuf-c/libprotobuf-c.a
 /home/david/esp/panel_matter/build/esp-idf/protocomm/libprotocomm.a
@@ -63,5 +64,9 @@
 /home/david/esp/panel_matter/build/esp-idf/usb/libusb.a
 /home/david/esp/panel_matter/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /home/david/esp/panel_matter/build/esp-idf/main/libmain.a
+/home/david/esp/panel_matter/build/esp-idf/usb_stream/libusb_stream.a
+/home/david/esp/panel_matter/build/esp-idf/espressif__button/libespressif__button.a
+/home/david/esp/panel_matter/build/esp-idf/esp_jpeg/libesp_jpeg.a
+/home/david/esp/panel_matter/build/esp-idf/espressif_esp_jpeg/libespressif_esp_jpeg.a
 /home/david/esp/panel_matter/build/esp-idf/lvgl/liblvgl.a
-/home/david/esp/panel_matter/build/esp-idf/wifi_conect/libwifi_conect.a
+/home/david/esp/panel_matter/build/esp-idf/xfer_http/libxfer_http.a
