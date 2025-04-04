@@ -1,0 +1,81 @@
+[1/5] cd /home/david/esp/panel_matter/build/esp-idf/esptool_py && /home/david/.espressif/python_env/idf5.1_py3.12_env/bin/python /home/david/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/david/esp/panel_matter/build/partition_table/partition-table.bin /home/david/esp/panel_matter/build/lvgl_demo.bin
+lvgl_demo.bin binary size 0xf0240 bytes. Smallest app partition is 0x2ee000 bytes. 0x1fddc0 bytes (68%) free.
+[2/5] Performing build step for 'bootloader'
+[1/1] cd /home/david/esp/panel_matter/build/bootloader/esp-idf/esptool_py && /home/david/.espressif/python_env/idf5.1_py3.12_env/bin/python /home/david/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/david/esp/panel_matter/build/bootloader/bootloader.bin
+Bootloader binary size 0x5660 bytes. 0x29a0 bytes (33%) free.
+[3/5] No install step for 'bootloader'
+[4/5] Completed 'bootloader'
+[4/5] cd /home/david/esp/esp-idf/components/esptool_py && /usr/bin/cmake -D IDF_PATH=/home/david/esp/esp-idf -D "SERIAL_TOOL=/home/david/.espressif/python_env/idf5.1_py3.12_env/bin/python;;/home/david/esp/esp-idf/components/esptool_py/esptool/esptool.py;--chip;esp32s3" -D "SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args" -D WORKING_DIRECTORY=/home/david/esp/panel_matter/build -P /home/david/esp/esp-idf/components/esptool_py/run_serial_tool.cmake
+esptool.py --chip esp32s3 -p /dev/ttyACM0 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 80m --flash_size 16MB 0x0 bootloader/bootloader.bin 0x10000 lvgl_demo.bin 0x8000 partition_table/partition-table.bin
+esptool.py v4.8.1
+Serial port /dev/ttyACM0
+Connecting...
+Chip is ESP32-S3 (QFN56) (revision v0.2)
+Features: WiFi, BLE, Embedded PSRAM 8MB (AP_3v3)
+Crystal is 40MHz
+MAC: dc:da:0c:57:09:38
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00000000 to 0x00005fff...
+Flash will be erased from 0x00010000 to 0x00100fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+SHA digest in image updated
+Compressed 22112 bytes to 14008...
+Writing at 0x00000000... (100 %)
+Wrote 22112 bytes (14008 compressed) at 0x00000000 in 0.2 seconds (effective 743.3 kbit/s)...
+Hash of data verified.
+Compressed 983616 bytes to 670603...
+Writing at 0x00010000... (2 %)
+Writing at 0x00019c6c... (4 %)
+Writing at 0x00024528... (7 %)
+Writing at 0x0002c0a2... (9 %)
+Writing at 0x00031784... (12 %)
+Writing at 0x0003ca4d... (14 %)
+Writing at 0x00042215... (17 %)
+Writing at 0x00047a65... (19 %)
+Writing at 0x0004d0c7... (21 %)
+Writing at 0x000522f6... (24 %)
+Writing at 0x000571f0... (26 %)
+Writing at 0x0005c59a... (29 %)
+Writing at 0x000616e0... (31 %)
+Writing at 0x00067ab8... (34 %)
+Writing at 0x0006ccb6... (36 %)
+Writing at 0x00071cf7... (39 %)
+Writing at 0x000773ac... (41 %)
+Writing at 0x0007d022... (43 %)
+Writing at 0x00082691... (46 %)
+Writing at 0x00087b3e... (48 %)
+Writing at 0x0008ce8c... (51 %)
+Writing at 0x00091d91... (53 %)
+Writing at 0x00096e68... (56 %)
+Writing at 0x0009beac... (58 %)
+Writing at 0x000a11a8... (60 %)
+Writing at 0x000a64fe... (63 %)
+Writing at 0x000ac032... (65 %)
+Writing at 0x000b1014... (68 %)
+Writing at 0x000b5fc1... (70 %)
+Writing at 0x000bb0ac... (73 %)
+Writing at 0x000c010f... (75 %)
+Writing at 0x000c5000... (78 %)
+Writing at 0x000c9e7a... (80 %)
+Writing at 0x000cf3e4... (82 %)
+Writing at 0x000d49e6... (85 %)
+Writing at 0x000d9f52... (87 %)
+Writing at 0x000e2a80... (90 %)
+Writing at 0x000ea8a0... (92 %)
+Writing at 0x000f0013... (95 %)
+Writing at 0x000f5a65... (97 %)
+Writing at 0x000fb284... (100 %)
+Wrote 983616 bytes (670603 compressed) at 0x00010000 in 6.5 seconds (effective 1219.5 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 122...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (122 compressed) at 0x00008000 in 0.0 seconds (effective 647.1 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

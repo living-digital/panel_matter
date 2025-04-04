@@ -70,3 +70,4 @@ $<TARGET_FILE:__idf_esp_jpeg>
 $<TARGET_FILE:__idf_espressif_esp_jpeg>
 $<TARGET_FILE:__idf_lvgl>
 $<TARGET_FILE:__idf_xfer_http>
+$<TARGET_FILE:__idf_wifi_conect>
