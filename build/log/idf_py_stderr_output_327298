@@ -1,0 +1,14 @@
+warning: default on the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/david/esp/ESP32-s3_matter/components/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:815, /home/david/esp/ESP32-s3_matter/components/esp-matter/components/esp_matter/Kconfig:48) will have no effect, as defaults do not affect choice symbols
+warning: the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/david/esp/ESP32-s3_matter/components/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:815, /home/david/esp/ESP32-s3_matter/components/esp-matter/components/esp_matter/Kconfig:48) is defined with a prompt outside the choice
+Compiler supported targets: xtensa-esp32s3-elf
+
+ESP Insights Project commit: HEAD-HASH-NOTFOUND
+CMake Error at /home/david/esp/esp-idf/tools/cmake/component.cmake:313 (message):
+  Include directory
+  '/home/david/esp/ESP32-s3_matter/components/esp-matter/connectedhomeip/connectedhomeip/third_party/nlassert/repo/include'
+  is not a directory.
+Call Stack (most recent call first):
+  /home/david/esp/esp-idf/tools/cmake/component.cmake:481 (__component_add_include_dirs)
+  components/esp-matter/CMakeLists.txt:375 (idf_component_register)
+
+
