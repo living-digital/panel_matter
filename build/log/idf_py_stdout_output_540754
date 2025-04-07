@@ -1,0 +1,145 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f59
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3818,len:0x18dc
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xd88
+load:0x403cc700,len:0x2f98
+entry 0x403c9934
+[0;32mI (26) boot: ESP-IDF v5.1.2 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr  7 2025 13:01:22[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (39) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (44) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 002ee000[0m
+[0;32mI (92) boot:  3 storage          Unknown data     01 82 002fe000 00200000[0m
+[0;32mI (99) boot: End of partition table[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=26924h (157988) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=0003694c vaddr=3fc9ce00 size=04c4ch ( 19532) load[0m
+[0;32mI (140) esp_image: segment 2: paddr=0003b5a0 vaddr=40378000 size=04a78h ( 19064) load[0m
+[0;32mI (146) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=b0ecch (724684) map[0m
+[0;32mI (260) esp_image: segment 4: paddr=000f0ef4 vaddr=4037ca78 size=102c4h ( 66244) load[0m
+[0;32mI (282) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (282) boot: Disabling RNG early entropy source...[0m
+[0;32mI (283) cpu_start: Multicore app[0m
+[0;32mI (287) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (291) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (297) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (303) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (308) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (313) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (318) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (324) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (330) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (335) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (342) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (347) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (352) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (357) esp_psram: Speed: 80MHz[0m
+[0;32mI (413) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (425) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (425) cpu_start: Pro cpu up.[0m
+[0;32mI (425) cpu_start: Starting app cpu, entry point is 0x40379778[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (682) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (690) cpu_start: Pro cpu start user code[0m
+[0;32mI (691) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (691) cpu_start: Application information:[0m
+[0;32mI (691) cpu_start: Project name:     lvgl_demo[0m
+[0;32mI (691) cpu_start: App version:      9964832-dirty[0m
+[0;32mI (691) cpu_start: Compile time:     Apr  7 2025 13:01:13[0m
+[0;32mI (691) cpu_start: ELF file SHA256:  7a8899e682a016f6...[0m
+[0;32mI (692) cpu_start: ESP-IDF:          v5.1.2[0m
+[0;32mI (692) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (692) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (692) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (692) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (693) heap_init: At 3FCB59D8 len 00033D38 (207 KiB): DRAM[0m
+[0;32mI (693) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (693) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (693) esp_psram: Adding pool of 7232K of PSRAM memory to heap allocator[0m
+[0;32mI (694) spi_flash: detected chip: gd[0m
+[0;32mI (694) spi_flash: flash io: qio[0m
+[0;32mI (694) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (695) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (695) app_start: Starting scheduler on CPU0[0m
+[0;32mI (695) app_start: Starting scheduler on CPU1[0m
+k: Started on CPU0[0m
+[0;32mI (705) esp_psram: Reserving pool of 8K of internal memory for DMA/internal allocations[0m
+[0;32mI (705) main_task: Calling app_main()[0m
+[0;32mI (705) wifi_conect: Usando IP estática: 192.168.18.250[0m
+[0;32mI (705) pp: pp rom version: e7ae62f[0m
+[0;32mI (705) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (725) wifi:wifi driver task: 3fcc1ff8, prio:23, stack:6656, core=0[0m
+[0;32mI (725) wifi:wifi firmware version: 91b9630[0m
+[0;32mI (725) wifi:wifi certification version: v7.0[0m
+[0;32mI (725) wifi:config NVS flash: enabled[0m
+[0;32mI (725) wifi:config nano formating: disabled[0m
+[0;32mI (725) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (725) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (725) wifi:Init management short buffer num: 32[0m
+[0;32mI (725) wifi:Init static tx buffer num: 16[0m
+[0;32mI (725) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (725) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (725) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (725) wifi:Init static rx buffer num: 10[0m
+[0;32mI (725) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (725) wifi_init: rx ba win: 6[0m
+[0;32mI (725) wifi_init: tcpip mbox: 32[0m
+[0;32mI (725) wifi_init: udp mbox: 6[0m
+[0;32mI (725) wifi_init: tcp mbox: 6[0m
+[0;32mI (725) wifi_init: tcp tx win: 5744[0m
+[0;32mI (725) wifi_init: tcp rx win: 5744[0m
+[0;32mI (725) wifi_init: tcp mss: 1440[0m
+[0;32mI (725) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (725) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (725) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (735) phy_init: phy_version 620,ec7ec30,Sep  5 2023,13:49:13[0m
+[0;33mW (735) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (765) wifi:mode : sta (dc:da:0c:57:09:38)[0m
+[0;32mI (765) wifi:enable tsf[0m
+[0;32mI (765) wifi_conect: Connecting to WiFi...[0m
+[0;32mI (775) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1[0m
+[0;32mI (1105) wifi:state: init -> auth (b0)[0m
+[0;32mI (1105) wifi:state: auth -> assoc (0)[0m
+[0;32mI (1105) wifi:state: assoc -> run (10)[0m
+[0;32mI (1115) wifi:<ba-add>idx:0 (ifx:0, 84:aa:9c:4b:60:6f), tid:0, ssn:0, winSize:64[0m
+[0;32mI (1125) wifi:connected with MOVISTAR_606E, aid = 1, channel 1, BW20, bssid = 84:aa:9c:4b:60:6f[0m
+[0;32mI (1125) wifi:security: WPA2-PSK, phy: bgn, rssi: -54[0m
+[0;32mI (1135) wifi:pm start, type: 1[0m
+
+[0;32mI (1135) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (1135) esp_netif_handlers: sta ip: 192.168.18.250, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (1135) wifi_conect: Connected to SSID: MOVISTAR_606E[0m
+[0;32mI (1135) wifi_conect: Conexión con IP estática:[0m
+[0;32mI (1135) wifi_conect:   IP      : 192.168.18.250[0m
+[0;32mI (1135) wifi_conect:   Gateway : 192.168.18.1[0m
+[0;32mI (1135) wifi_conect:   Máscara : 255.255.255.0[0m
+[0;32mI (1135) i2c_bus: i2c0 bus inited[0m
+[0;32mI (1135) error: sys_int
+[0m
+[0;32mI (1145) error: sys_int
+[0m
+[0;32mI (1145) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1145) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1145) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1145) st7701: st7701 register init[0m
+[0;32mI (1155) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (1515) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1535) gt911: tp driver ic:GT911[0m
+[0;32mI (1535) gt911: tp config version:0x61[0m
+[0;32mI (1545) gt911: gt911 init ok[0m
+[0;32mI (1545) lvgl_init: lv_init
+[0m
+[0;32mI (1545) main_task: Returned from app_main()[0m
