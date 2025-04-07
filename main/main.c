@@ -47,7 +47,7 @@ void app_main(void) {
     lv_coord_t ver_res = lv_disp_get_ver_res(NULL);
 
     char texto_res[64];
-    snprintf(texto_res, sizeof(texto_res), "Resolución: %dx%d", hor_res, ver_res);
+    snprintf(texto_res, sizeof(texto_res), "Resolucion: %dx%d", hor_res, ver_res);
 
     lv_obj_t *label2 = lv_label_create(lv_scr_act());
     lv_label_set_text(label2, texto_res);
