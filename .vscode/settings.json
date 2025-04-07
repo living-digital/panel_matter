@@ -2,6 +2,7 @@
     "git.ignoreLimitWarning": true,
     "C_Cpp.default.compilerPath": "/usr/bin/gcc-13",
     "files.associations": {
-        "freertos.h": "c"
+        "freertos.h": "c",
+        "string.h": "c"
     }
 }

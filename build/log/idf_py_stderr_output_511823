@@ -1,0 +1,5 @@
+warning: default on the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:815, /home/david/esp/panel_matter/components/esp-matter/components/esp_matter/Kconfig:48) will have no effect, as defaults do not affect choice symbols
+warning: the choice symbol SEC_CERT_DAC_PROVIDER (defined at /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/config/esp32/components/chip/Kconfig:815, /home/david/esp/panel_matter/components/esp-matter/components/esp_matter/Kconfig:48) is defined with a prompt outside the choice
+Compiler supported targets: xtensa-esp32s3-elf
+
+ESP Insights Project commit: 79c3463-dirty
