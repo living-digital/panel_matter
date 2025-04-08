@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "lvgl_demo",
-    "project_version":    "1d3b32a-dirty",
+    "project_version":    "v0.1.0-1-g519f2e2-dirty",
     "project_path":       "/home/david/esp/panel_matter",
     "idf_path":           "/home/david/esp/esp-idf",
     "build_dir":          "/home/david/esp/panel_matter/build",
@@ -455,8 +455,8 @@
             "dir": "/home/david/components/esp_jpeg",
             "type": "LIBRARY",
             "lib": "__idf_esp_jpeg",
-            "reqs": [],
-            "priv_reqs": [ "driver", "usb_stream", "usb_cam", "espressif__button", "lvgl_wifi_connect", "bsp", "main" ],
+            "reqs": [ "esp_timer" ],
+            "priv_reqs": [ "esp_event", "driver", "usb_stream", "usb_cam", "espressif__button", "lvgl_wifi_connect", "bsp", "main", "nvs_flash", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/david/esp/panel_matter/build/esp-idf/esp_jpeg/libesp_jpeg.a",
@@ -981,12 +981,12 @@
             "type": "LIBRARY",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "lvgl", "bsp", "lv_port", "spiffs", "wifi_conect" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/david/esp/panel_matter/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/david/esp/panel_matter/main/main.c" ],
-            "include_dirs": [ "include" ]
+            "sources": [ "/home/david/esp/panel_matter/main/main.c", "/home/david/esp/panel_matter/main/ui/base_screen.c" ],
+            "include_dirs": [ "include", "ui" ]
         },
         "mbedtls": {
             "alias": "idf::mbedtls",
@@ -2473,10 +2473,10 @@
             "dir": "/home/david/esp/panel_matter/main",
             "lib": "__idf_main",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "lvgl", "bsp", "lv_port", "spiffs", "wifi_conect" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
-            "include_dirs": [ "include" ]
+            "include_dirs": [ "include", "ui" ]
         },
         "DS18B20": {
             "alias": "idf::DS18B20",
@@ -2520,8 +2520,8 @@
             "prefix": "idf",
             "dir": "/home/david/components/esp_jpeg",
             "lib": "__idf_esp_jpeg",
-            "reqs": [],
-            "priv_reqs": [ "driver", "usb_stream", "usb_cam", "espressif__button", "lvgl_wifi_connect", "bsp", "main" ],
+            "reqs": [ "esp_timer" ],
+            "priv_reqs": [ "esp_event", "driver", "usb_stream", "usb_cam", "espressif__button", "lvgl_wifi_connect", "bsp", "main", "nvs_flash", "spi_flash" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "include" ]

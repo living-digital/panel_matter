@@ -1,12 +1,14 @@
 idf_component_register(
     SRC_DIRS
-    "."
-    
+        "."
+        "ui"
     INCLUDE_DIRS
-    "include"
-    )
-
-
-# spiffs_create_partition_image(storage ../spiffs FLASH_IN_PROJECT)
-
-
+        "include"
+        "ui"
+    PRIV_REQUIRES
+        lvgl
+	bsp
+        lv_port
+	spiffs
+	wifi_conect
+)

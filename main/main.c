@@ -13,6 +13,8 @@
 #include "bsp_board.h"
 // inicialización de la interfaz de LVGL
 #include "lvgl_init.h"
+// Pantallas y elementos para LVGL
+#include "ui/base_screen.h"
 // conexión wifi
 #include "wifi_conect.h"
 
@@ -33,6 +35,11 @@ void app_main(void) {
     // inicialización del hardware y lvgl
     sys_int();
     lvgl_init();
+
+    // Pantalla de fondo
+    lv_color_t color_fondo = lv_color_hex(0x003366);
+    lv_obj_t *pantalla = base_screen_create_color(color_fondo);
+    lv_scr_load(pantalla);
 
     // Crear un label para mostrar IP
     char texto_ip[64];
