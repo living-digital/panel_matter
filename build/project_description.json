@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "lvgl_demo",
-    "project_version":    "v0.2.0-1-gbb8fadd-dirty",
+    "project_version":    "v0.2.0-2-gc9c0ef8-dirty",
     "project_path":       "/home/david/esp/panel_matter",
     "idf_path":           "/home/david/esp/esp-idf",
     "build_dir":          "/home/david/esp/panel_matter/build",
@@ -985,7 +985,7 @@
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/david/esp/panel_matter/build/esp-idf/main/libmain.a",
-            "sources": [ "/home/david/esp/panel_matter/main/main.c", "/home/david/esp/panel_matter/main/ui/base_screen.c", "/home/david/esp/panel_matter/main/ui/ui_styles.c" ],
+            "sources": [ "/home/david/esp/panel_matter/main/main.c", "/home/david/esp/panel_matter/main/ui/base_screen.c", "/home/david/esp/panel_matter/main/ui/card.c", "/home/david/esp/panel_matter/main/ui/ui_styles.c" ],
             "include_dirs": [ "include", "ui" ]
         },
         "mbedtls": {

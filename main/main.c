@@ -16,6 +16,7 @@
 // Pantallas y elementos para LVGL
 #include "ui/ui_styles.h"
 #include "ui/base_screen.h"
+#include "ui/card.h"
 // conexión wifi
 #include "wifi_conect.h"
 
@@ -39,9 +40,11 @@ void app_main(void) {
     ui_styles_init();
 
     // Pantalla de fondo
-    lv_obj_t * pantalla = base_screen();
+    lv_obj_t *pantalla = base_screen();
     lv_scr_load(pantalla);
 
+    // Crear un card dentro de la pantalla
+    lv_obj_t *card1 = card_create(pantalla);
 
 
     // Actualización de la pantalla

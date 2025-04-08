@@ -40,14 +40,13 @@ lv_style_t style_texto_principal;
 lv_style_t style_card;
 
 void ui_styles_init(void) {
-    // === Estilo de fondo ===
+    // === Estilo de base_screen ===
     lv_style_init(&style_fondo); // inicializa el estilo
     lv_style_set_bg_color(&style_fondo, COLOR_FONDO1); // establece color de fondo
     lv_style_set_bg_opa(&style_fondo, LV_OPA_COVER);  // opacidad al 100%
     lv_style_set_border_width(&style_fondo, 0); // Esto elimina el borde blanco
     lv_style_set_radius(&style_fondo, 0);        // Elimina el radio de las esquinas
     lv_style_set_pad_all(&style_fondo, 20);  // Esto agrega el padding
-
 
     // === Estilo de texto principal ===
     lv_style_init(&style_texto_principal);
@@ -57,14 +56,11 @@ void ui_styles_init(void) {
 
     // === Estilo de tarjeta (contenedor con sombra) ===
     lv_style_init(&style_card);
-    lv_style_set_bg_color(&style_card, COLOR_FONDO2);
-    lv_style_set_bg_opa(&style_card, LV_OPA_COVER);
-    lv_style_set_border_color(&style_card, COLOR_SECUNDARIO);
-    lv_style_set_border_width(&style_card, 2);
-    lv_style_set_radius(&style_card, 12);
-    lv_style_set_pad_all(&style_card, 12);
-    lv_style_set_shadow_color(&style_card, COLOR_TERCIARIO);
-    lv_style_set_shadow_width(&style_card, 10);
-    lv_style_set_shadow_ofs_x(&style_card, 4);
-    lv_style_set_shadow_ofs_y(&style_card, 4);
+    lv_style_set_bg_color(&style_card, COLOR_FONDO2);  // Color de fondo del card
+    lv_style_set_bg_opa(&style_card, LV_OPA_COVER);    // Opacidad 100%
+    lv_style_set_border_width(&style_card, 2);         // Ancho del borde
+    lv_style_set_border_color(&style_card, COLOR_SECUNDARIO);  // Color del borde
+    lv_style_set_radius(&style_card, 10);              // Radio de las esquinas
+    lv_style_set_pad_all(&style_card, 10);             // Padding dentro del card
+
 } 
