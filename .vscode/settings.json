@@ -4,5 +4,6 @@
     "files.associations": {
         "freertos.h": "c",
         "string.h": "c"
-    }
+    },
+    "idf.pythonInstallPath": "/home/david/.espressif/python_env/idf5.3_py3.12_env/bin/python"
 }

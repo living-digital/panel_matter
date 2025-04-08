@@ -4,6 +4,7 @@
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/gen_project_binary.dir
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/app.dir
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/erase_flash.dir
+/home/david/esp/panel_matter/build/bootloader/CMakeFiles/merge-bin.dir
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/monitor.dir
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/_project_elf_src.dir
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/bootloader.elf.dir
@@ -13,8 +14,8 @@
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/dfu.dir
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/dfu-list.dir
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/dfu-flash.dir
-/home/david/esp/panel_matter/build/bootloader/CMakeFiles/uf2-app.dir
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/uf2.dir
+/home/david/esp/panel_matter/build/bootloader/CMakeFiles/uf2-app.dir
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/edit_cache.dir
 /home/david/esp/panel_matter/build/bootloader/CMakeFiles/rebuild_cache.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/CMakeFiles/edit_cache.dir
@@ -36,7 +37,9 @@
 /home/david/esp/panel_matter/build/bootloader/esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/spi_flash/CMakeFiles/edit_cache.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/spi_flash/CMakeFiles/rebuild_cache.dir
-/home/david/esp/panel_matter/build/bootloader/esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir
+/home/david/esp/panel_matter/build/bootloader/esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir
+/home/david/esp/panel_matter/build/bootloader/esp-idf/esp_bootloader_format/CMakeFiles/edit_cache.dir
+/home/david/esp/panel_matter/build/bootloader/esp-idf/esp_bootloader_format/CMakeFiles/rebuild_cache.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/esp_app_format/CMakeFiles/edit_cache.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/esp_app_format/CMakeFiles/rebuild_cache.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir
@@ -60,6 +63,8 @@
 /home/david/esp/panel_matter/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/rebuild_cache.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/CMakeFiles/edit_cache.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/esp_hw_support/port/esp32s3/CMakeFiles/rebuild_cache.dir
+/home/david/esp/panel_matter/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/edit_cache.dir
+/home/david/esp/panel_matter/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles/rebuild_cache.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/esp_common/CMakeFiles/edit_cache.dir
 /home/david/esp/panel_matter/build/bootloader/esp-idf/esp_common/CMakeFiles/rebuild_cache.dir

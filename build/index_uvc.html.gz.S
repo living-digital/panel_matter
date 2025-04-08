@@ -1,7 +1,9 @@
 /* * Data converted from /home/david/components/xfer_http/www/index_uvc.html.gz
  */
 .data
+#if !defined (__APPLE__) && !defined (__linux__)
 .section .rodata.embedded
+#endif
 
 .global index_uvc_html_gz
 index_uvc_html_gz:
@@ -185,4 +187,4 @@ _binary_index_uvc_html_gz_end: /* for objcopy compatibility */
 
 .global index_uvc_html_gz_length
 index_uvc_html_gz_length:
-.word 2711
+.long 2711
