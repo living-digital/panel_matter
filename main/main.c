@@ -14,6 +14,7 @@
 // inicialización de la interfaz de LVGL
 #include "lvgl_init.h"
 // Pantallas y elementos para LVGL
+#include "ui/ui_styles.h"
 #include "ui/base_screen.h"
 // conexión wifi
 #include "wifi_conect.h"
@@ -32,20 +33,22 @@ void app_main(void) {
         }
     } while (err != ESP_OK);
 
-    // inicialización del hardware y lvgl
+    // inicializaciones
     sys_int();
     lvgl_init();
+    ui_styles_init();
 
     // Pantalla de fondo
-    lv_color_t color_fondo = lv_color_hex(0x003366);
-    lv_obj_t *pantalla = base_screen_create_color(color_fondo);
+    lv_color_t color_fondo = lv_color_hex(0x07243b);
+    lv_obj_t * pantalla = base_screen_create_color(color_fondo);
     lv_scr_load(pantalla);
 
     // Crear un label para mostrar IP
     char texto_ip[64];
     snprintf(texto_ip, sizeof(texto_ip), "IP: %s", wifi_conect_get_ip());
 
-    lv_obj_t *label1 = lv_label_create(lv_scr_act());
+    lv_obj_t * label1 = lv_label_create(pantalla);
+    lv_obj_add_style(label1, &style_texto_principal, 0);
     lv_label_set_text(label1, texto_ip);
     lv_obj_align(label1, LV_ALIGN_TOP_MID, 0, 10);
 
@@ -56,7 +59,8 @@ void app_main(void) {
     char texto_res[64];
     snprintf(texto_res, sizeof(texto_res), "Resolución: %dx%d", hor_res, ver_res);
 
-    lv_obj_t *label2 = lv_label_create(lv_scr_act());
+    lv_obj_t *label2 = lv_label_create(pantalla);
+    lv_obj_add_style(label2, &style_texto_principal, 0);
     lv_label_set_text(label2, texto_res);
     lv_obj_align(label2, LV_ALIGN_TOP_MID, 0, 40);
 }
