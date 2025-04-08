@@ -11,7 +11,7 @@ Cable USB para flashear el ESP32
 Red WiFi de 2.4 GHz (el ESP32 no es compatible con redes de 5 GHz)
 
 
-# VERSIONADO: vX.Y.Z🔖
+## Versionado: vX.Y.Z🔖
 Cada número tiene un propósito específico:
 
 Major (X) – Cambios incompatibles: Se incrementa cuando haces cambios que rompen compatibilidad con versiones anteriores.
