@@ -1,0 +1,140 @@
+[1/474] Performing build step for 'bootloader'
+[1/1] cd /home/david/esp/panel_matter/build/bootloader/esp-idf/esptool_py && /home/david/.espressif/python_env/idf5.3_py3.12_env/bin/python /home/david/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/david/esp/panel_matter/build/bootloader/bootloader.bin
+Bootloader binary size 0x59c0 bytes. 0x2640 bytes (30%) free.
+[2/474] Building C object esp-idf/espressif__esp_insights/CMakeFiles/__idf_espressif__esp_insights.dir/src/esp_insights_cbor_encoder.c.obj
+FAILED: esp-idf/espressif__esp_insights/CMakeFiles/__idf_espressif__esp_insights.dir/src/esp_insights_cbor_encoder.c.obj 
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/bin/xtensa-esp32s3-elf-gcc -DCHIP_SYSTEM_CONFIG_USE_LWIP=1 -DESP_PLATFORM -DIDF_VER=\"v5.3.2\" -DSOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE -DSOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ -D_GLIBCXX_HAVE_POSIX_SEMAPHORE -D_GLIBCXX_USE_POSIX_SEMAPHORE -D_GNU_SOURCE -D_POSIX_READER_WRITER_LOCKS -I/home/david/esp/panel_matter/build/config -I/home/david/esp/panel_matter/managed_components/espressif__esp_insights/include -I/home/david/esp/panel_matter/managed_components/espressif__esp_insights/src -I/home/david/esp/esp-idf/components/newlib/platform_include -I/home/david/esp/esp-idf/components/freertos/config/include -I/home/david/esp/esp-idf/components/freertos/config/include/freertos -I/home/david/esp/esp-idf/components/freertos/config/xtensa/include -I/home/david/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include -I/home/david/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include -I/home/david/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos -I/home/david/esp/esp-idf/components/freertos/esp_additions/include -I/home/david/esp/esp-idf/components/esp_hw_support/include -I/home/david/esp/esp-idf/components/esp_hw_support/include/soc -I/home/david/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3 -I/home/david/esp/esp-idf/components/esp_hw_support/dma/include -I/home/david/esp/esp-idf/components/esp_hw_support/ldo/include -I/home/david/esp/esp-idf/components/esp_hw_support/port/esp32s3/. -I/home/david/esp/esp-idf/components/esp_hw_support/port/esp32s3/include -I/home/david/esp/esp-idf/components/heap/include -I/home/david/esp/esp-idf/components/log/include -I/home/david/esp/esp-idf/components/soc/include -I/home/david/esp/esp-idf/components/soc/esp32s3 -I/home/david/esp/esp-idf/components/soc/esp32s3/include -I/home/david/esp/esp-idf/components/hal/platform_port/include -I/home/david/esp/esp-idf/components/hal/esp32s3/include -I/home/david/esp/esp-idf/components/hal/include -I/home/david/esp/esp-idf/components/esp_rom/include -I/home/david/esp/esp-idf/components/esp_rom/include/esp32s3 -I/home/david/esp/esp-idf/components/esp_rom/esp32s3 -I/home/david/esp/esp-idf/components/esp_common/include -I/home/david/esp/esp-idf/components/esp_system/include -I/home/david/esp/esp-idf/components/esp_system/port/soc -I/home/david/esp/esp-idf/components/esp_system/port/include/private -I/home/david/esp/esp-idf/components/xtensa/esp32s3/include -I/home/david/esp/esp-idf/components/xtensa/include -I/home/david/esp/esp-idf/components/xtensa/deprecated_include -I/home/david/esp/esp-idf/components/lwip/include -I/home/david/esp/esp-idf/components/lwip/include/apps -I/home/david/esp/esp-idf/components/lwip/include/apps/sntp -I/home/david/esp/esp-idf/components/lwip/lwip/src/include -I/home/david/esp/esp-idf/components/lwip/port/include -I/home/david/esp/esp-idf/components/lwip/port/freertos/include -I/home/david/esp/esp-idf/components/lwip/port/esp32xx/include -I/home/david/esp/esp-idf/components/lwip/port/esp32xx/include/arch -I/home/david/esp/esp-idf/components/lwip/port/esp32xx/include/sys -I/home/david/esp/panel_matter/managed_components/espressif__esp_diagnostics/include -I/home/david/esp/panel_matter/managed_components/espressif__cbor/port/include -I/home/david/esp/panel_matter/managed_components/espressif__rmaker_common/include -I/home/david/esp/esp-idf/components/esp_event/include -I/home/david/esp/esp-idf/components/espcoredump/include -I/home/david/esp/esp-idf/components/espcoredump/include/port/xtensa -I/home/david/esp/panel_matter/managed_components/espressif__esp_diag_data_store/src/rtc_store -I/home/david/esp/panel_matter/managed_components/espressif__esp_diag_data_store/include -I/home/david/esp/esp-idf/components/nvs_flash/include -I/home/david/esp/esp-idf/components/spi_flash/include -I/home/david/esp/esp-idf/components/esp_partition/include -I/home/david/esp/esp-idf/components/esp_timer/include -I/home/david/esp/esp-idf/components/esp_wifi/include -I/home/david/esp/esp-idf/components/esp_wifi/wifi_apps/include -I/home/david/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include -I/home/david/esp/esp-idf/components/esp_wifi/include/local -I/home/david/esp/esp-idf/components/esp_phy/include -I/home/david/esp/esp-idf/components/esp_phy/esp32s3/include -I/home/david/esp/esp-idf/components/esp_netif/include -I/home/david/esp/esp-idf/components/esp_http_client/include -mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always -ffunction-sections -fdata-sections -Wall -Werror=all -Wno-error=unused-function -Wno-error=unused-variable -Wno-error=unused-but-set-variable -Wno-error=deprecated-declarations -Wextra -Wno-unused-parameter -Wno-sign-compare -Wno-enum-conversion -gdwarf-4 -ggdb -mdisable-hardware-atomics -O2 -fmacro-prefix-map=/home/david/esp/panel_matter=. -fmacro-prefix-map=/home/david/esp/esp-idf=/IDF -fstrict-volatile-bitfields -fno-jump-tables -fno-tree-switch-conversion -Wno-error=uninitialized -Wno-error=maybe-uninitialized -Wno-format-nonliteral -Wno-missing-field-initializers -Wno-error=array-bounds -Wno-write-strings -std=gnu17 -Wno-old-style-declaration -MD -MT esp-idf/espressif__esp_insights/CMakeFiles/__idf_espressif__esp_insights.dir/src/esp_insights_cbor_encoder.c.obj -MF esp-idf/espressif__esp_insights/CMakeFiles/__idf_espressif__esp_insights.dir/src/esp_insights_cbor_encoder.c.obj.d -o esp-idf/espressif__esp_insights/CMakeFiles/__idf_espressif__esp_insights.dir/src/esp_insights_cbor_encoder.c.obj -c /home/david/esp/panel_matter/managed_components/espressif__esp_insights/src/esp_insights_cbor_encoder.c
+/home/david/esp/panel_matter/managed_components/espressif__esp_insights/src/esp_insights_cbor_encoder.c:176:22: error: 'SHA_SIZE' undeclared here (not in a function)
+  176 |     char sha_sum[2 * SHA_SIZE + 1];
+      |                      ^~~~~~~~
+/home/david/esp/panel_matter/managed_components/espressif__esp_insights/src/esp_insights_cbor_encoder.c: In function 'encode_data_points':
+/home/david/esp/panel_matter/managed_components/espressif__esp_insights/src/esp_insights_cbor_encoder.c:587:20: error: 'rtc_store_non_critical_data_hdr_t' has no member named 'dg'
+  587 |         if (!header.dg || !esp_ptr_in_drom(header.dg) || !header.len) {
+      |                    ^
+/home/david/esp/panel_matter/managed_components/espressif__esp_insights/src/esp_insights_cbor_encoder.c:587:50: error: 'rtc_store_non_critical_data_hdr_t' has no member named 'dg'
+  587 |         if (!header.dg || !esp_ptr_in_drom(header.dg) || !header.len) {
+      |                                                  ^
+[3/474] No install step for 'bootloader'
+[4/474] Building CXX object esp-idf/esp-matter/CMakeFiles/__idf_esp-matter.dir/connectedhomeip/connectedhomeip/src/access/examples/PermissiveAccessControlDelegate.cpp.obj
+In file included from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/system/SystemLayer.h:38,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/core/CHIPCore.h:30,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/AccessControl.h:31,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/examples/PermissiveAccessControlDelegate.h:19,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/examples/PermissiveAccessControlDelegate.cpp:19:
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/support/LambdaBridge.h:46:32: warning: 'using std::aligned_storage_t = union std::aligned_storage<24, 4>::type' is deprecated [-Wdeprecated-declarations]
+   46 |     using LambdaStorage = std::aligned_storage_t<CHIP_CONFIG_LAMBDA_EVENT_SIZE, CHIP_CONFIG_LAMBDA_EVENT_ALIGN>;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/optional:37,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/RequestPath.h:22,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/AccessControl.h:28:
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:2598:11: note: declared here
+ 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<_Len, _Align>::type;
+      |           ^~~~~~~~~~~~~~~~~
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/support/LambdaBridge.h:46:112: warning: 'using std::aligned_storage_t = union std::aligned_storage<24, 4>::type' is deprecated [-Wdeprecated-declarations]
+   46 |     using LambdaStorage = std::aligned_storage_t<CHIP_CONFIG_LAMBDA_EVENT_SIZE, CHIP_CONFIG_LAMBDA_EVENT_ALIGN>;
+      |                                                                                                                ^
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:2598:11: note: declared here
+ 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<_Len, _Align>::type;
+      |           ^~~~~~~~~~~~~~~~~
+[5/474] Building CXX object esp-idf/esp-matter/CMakeFiles/__idf_esp-matter.dir/connectedhomeip/connectedhomeip/src/app/AttributeAccessInterfaceRegistry.cpp.obj
+In file included from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/system/SystemLayer.h:38,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/core/CHIPCore.h:30,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/MessageDef/Builder.h:27,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/MessageDef/ArrayBuilder.h:20,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/MessageDef/AttributeReportIBs.h:26,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/AttributeReportBuilder.h:19,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/AttributeAccessInterface.h:21,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/AttributeAccessInterfaceRegistry.cpp:16:
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/support/LambdaBridge.h:46:32: warning: 'using std::aligned_storage_t = union std::aligned_storage<24, 4>::type' is deprecated [-Wdeprecated-declarations]
+   46 |     using LambdaStorage = std::aligned_storage_t<CHIP_CONFIG_LAMBDA_EVENT_SIZE, CHIP_CONFIG_LAMBDA_EVENT_ALIGN>;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/system/SystemLayer.h:28:
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:2598:11: note: declared here
+ 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<_Len, _Align>::type;
+      |           ^~~~~~~~~~~~~~~~~
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/support/LambdaBridge.h:46:112: warning: 'using std::aligned_storage_t = union std::aligned_storage<24, 4>::type' is deprecated [-Wdeprecated-declarations]
+   46 |     using LambdaStorage = std::aligned_storage_t<CHIP_CONFIG_LAMBDA_EVENT_SIZE, CHIP_CONFIG_LAMBDA_EVENT_ALIGN>;
+      |                                                                                                                ^
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:2598:11: note: declared here
+ 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<_Len, _Align>::type;
+      |           ^~~~~~~~~~~~~~~~~
+[6/474] Building CXX object esp-idf/esp-matter/CMakeFiles/__idf_esp-matter.dir/connectedhomeip/connectedhomeip/src/access/examples/ExampleAccessControlDelegate.cpp.obj
+In file included from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/system/SystemLayer.h:38,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/core/CHIPCore.h:30,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/AccessControl.h:31,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/examples/ExampleAccessControlDelegate.h:19,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/examples/ExampleAccessControlDelegate.cpp:19:
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/support/LambdaBridge.h:46:32: warning: 'using std::aligned_storage_t = union std::aligned_storage<24, 4>::type' is deprecated [-Wdeprecated-declarations]
+   46 |     using LambdaStorage = std::aligned_storage_t<CHIP_CONFIG_LAMBDA_EVENT_SIZE, CHIP_CONFIG_LAMBDA_EVENT_ALIGN>;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/optional:37,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/RequestPath.h:22,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/AccessControl.h:28:
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:2598:11: note: declared here
+ 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<_Len, _Align>::type;
+      |           ^~~~~~~~~~~~~~~~~
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/support/LambdaBridge.h:46:112: warning: 'using std::aligned_storage_t = union std::aligned_storage<24, 4>::type' is deprecated [-Wdeprecated-declarations]
+   46 |     using LambdaStorage = std::aligned_storage_t<CHIP_CONFIG_LAMBDA_EVENT_SIZE, CHIP_CONFIG_LAMBDA_EVENT_ALIGN>;
+      |                                                                                                                ^
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:2598:11: note: declared here
+ 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<_Len, _Align>::type;
+      |           ^~~~~~~~~~~~~~~~~
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/examples/ExampleAccessControlDelegate.cpp:1148:20: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+ 1148 | static_assert(std::is_pod<SubjectStorage>(), "Storage type must be POD");
+      |                    ^~~~~~
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:819:5: note: declared here
+  819 |     is_pod
+      |     ^~~~~~
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/examples/ExampleAccessControlDelegate.cpp:1149:20: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+ 1149 | static_assert(std::is_pod<TargetStorage>(), "Storage type must be POD");
+      |                    ^~~~~~
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:819:5: note: declared here
+  819 |     is_pod
+      |     ^~~~~~
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/access/examples/ExampleAccessControlDelegate.cpp:1150:20: warning: 'template<class _Tp> struct std::is_pod' is deprecated: use 'is_standard_layout && is_trivial' instead [-Wdeprecated-declarations]
+ 1150 | static_assert(std::is_pod<EntryStorage>(), "Storage type must be POD");
+      |                    ^~~~~~
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:819:5: note: declared here
+  819 |     is_pod
+      |     ^~~~~~
+[7/474] Building CXX object esp-idf/esp-matter/CMakeFiles/__idf_esp-matter.dir/connectedhomeip/connectedhomeip/src/app/AttributePathExpandIterator.cpp.obj
+In file included from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/system/SystemLayer.h:38,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/core/CHIPCore.h:30,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/EventPathParams.h:23,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/data-model-provider/Provider.h:20,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/AttributePathExpandIterator.h:22,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/AttributePathExpandIterator.cpp:17:
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/support/LambdaBridge.h:46:32: warning: 'using std::aligned_storage_t = union std::aligned_storage<24, 4>::type' is deprecated [-Wdeprecated-declarations]
+   46 |     using LambdaStorage = std::aligned_storage_t<CHIP_CONFIG_LAMBDA_EVENT_SIZE, CHIP_CONFIG_LAMBDA_EVENT_ALIGN>;
+      |                                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/optional:37,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/core/Optional.h:27,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/ConcreteAttributePath.h:23,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/AttributePathParams.h:22,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/AttributePathExpandIterator.h:20:
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:2598:11: note: declared here
+ 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<_Len, _Align>::type;
+      |           ^~~~~~~~~~~~~~~~~
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/support/LambdaBridge.h:46:112: warning: 'using std::aligned_storage_t = union std::aligned_storage<24, 4>::type' is deprecated [-Wdeprecated-declarations]
+   46 |     using LambdaStorage = std::aligned_storage_t<CHIP_CONFIG_LAMBDA_EVENT_SIZE, CHIP_CONFIG_LAMBDA_EVENT_ALIGN>;
+      |                                                                                                                ^
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:2598:11: note: declared here
+ 2598 |     using aligned_storage_t _GLIBCXX23_DEPRECATED = typename aligned_storage<_Len, _Align>::type;
+      |           ^~~~~~~~~~~~~~~~~
+In file included from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/credentials/CHIPCertificateSet.h:35,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/credentials/FabricTable.h:28,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/transport/SessionManager.h:30,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/messaging/ExchangeMessageDispatch.h:28,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/messaging/ApplicationExchangeDispatch.h:28,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/messaging/ExchangeDelegate.h:27,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/messaging/ExchangeContext.h:31,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/CommandHandlerExchangeInterface.h:24,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/CommandHandler.h:20,
+                 from /home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/app/data-model-provider/Provider.h:27:
+/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib/support/Variant.h:142:33: warning: 'template<unsigned int _Len, unsigned int _Align> struct std::aligned_storage' is deprecated [-Wdeprecated-declarations]
+  142 |     using Data  = typename std::aligned_storage<kDataSize, kDataAlign>::type;
+      |                                 ^~~~~~~~~~~~~~~
+/home/david/.espressif/tools/xtensa-esp-elf/esp-13.2.0_20240530/xtensa-esp-elf/xtensa-esp-elf/include/c++/13.2.0/type_traits:2099:5: note: declared here
+ 2099 |     aligned_storage
+      |     ^~~~~~~~~~~~~~~
+ninja: build stopped: subcommand failed.

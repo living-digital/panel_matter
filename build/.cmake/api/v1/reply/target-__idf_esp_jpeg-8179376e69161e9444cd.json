@@ -1,0 +1,1423 @@
+{
+	"archive" : {},
+	"artifacts" : 
+	[
+		{
+			"path" : "esp-idf/esp_jpeg/libesp_jpeg.a"
+		}
+	],
+	"backtrace" : 2,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"idf_component_register",
+			"set_property",
+			"__component_set_dependencies",
+			"__component_set_all_dependencies",
+			"add_compile_options",
+			"add_c_compile_options",
+			"target_compile_options",
+			"add_compile_definitions",
+			"include_directories",
+			"target_include_directories",
+			"__component_add_include_dirs"
+		],
+		"files" : 
+		[
+			"/home/david/esp/esp-idf/tools/cmake/component.cmake",
+			"/home/david/components/esp_jpeg/CMakeLists.txt",
+			"/home/david/esp/esp-idf/tools/cmake/utilities.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 1,
+				"parent" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 480,
+				"parent" : 1
+			},
+			{
+				"command" : 4,
+				"file" : 0,
+				"line" : 514,
+				"parent" : 1
+			},
+			{
+				"command" : 3,
+				"file" : 0,
+				"line" : 358,
+				"parent" : 3
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 4
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 465,
+				"parent" : 1
+			},
+			{
+				"command" : 6,
+				"file" : 0,
+				"line" : 467,
+				"parent" : 1
+			},
+			{
+				"command" : 5,
+				"file" : 2,
+				"line" : 281,
+				"parent" : 8
+			},
+			{
+				"command" : 7,
+				"file" : 1,
+				"line" : 14,
+				"parent" : 0
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 4
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 8,
+				"file" : 3,
+				"line" : 8,
+				"parent" : 12
+			},
+			{
+				"command" : 8,
+				"file" : 0,
+				"line" : 466,
+				"parent" : 1
+			},
+			{
+				"command" : 9,
+				"file" : 0,
+				"line" : 464,
+				"parent" : 1
+			},
+			{
+				"command" : 11,
+				"file" : 0,
+				"line" : 482,
+				"parent" : 1
+			},
+			{
+				"command" : 10,
+				"file" : 0,
+				"line" : 316,
+				"parent" : 16
+			},
+			{
+				"command" : 2,
+				"file" : 0,
+				"line" : 337,
+				"parent" : 4
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mlongcalls  -fno-builtin-memcpy -fno-builtin-memset -fno-builtin-bzero -fno-builtin-stpcpy -fno-builtin-strncpy -fdiagnostics-color=always"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-ffunction-sections"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fdata-sections"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Werror=all"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=unused-function"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=unused-variable"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=unused-but-set-variable"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=deprecated-declarations"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wextra"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-unused-parameter"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-sign-compare"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-enum-conversion"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-gdwarf-4"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-ggdb"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-mdisable-hardware-atomics"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-O2"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fmacro-prefix-map=/home/david/esp/panel_matter=."
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fmacro-prefix-map=/home/david/esp/esp-idf=/IDF"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fstrict-volatile-bitfields"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-jump-tables"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-fno-tree-switch-conversion"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=uninitialized"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=maybe-uninitialized"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-format-nonliteral"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-missing-field-initializers"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-error=array-bounds"
+				},
+				{
+					"backtrace" : 7,
+					"fragment" : "-Wno-write-strings"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-std=gnu17"
+				},
+				{
+					"backtrace" : 9,
+					"fragment" : "-Wno-old-style-declaration"
+				},
+				{
+					"backtrace" : 10,
+					"fragment" : "-Wno-format"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "\"-DCHIP_ADDRESS_RESOLVE_IMPL_INCLUDE_HEADER=<lib/address_resolve/AddressResolve_DefaultImpl.h>\""
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-DCHIP_CONFIG_SOFTWARE_VERSION_NUMBER=0"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-DCHIP_MINMDNS_DEFAULT_POLICY=1"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-DCHIP_MINMDNS_USE_EPHEMERAL_UNICAST_PORT=0"
+				},
+				{
+					"backtrace" : 11,
+					"fragment" : "-DCHIP_MINMDNS_HIGH_VERBOSITY=0"
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 13,
+					"define" : "CHIP_SYSTEM_CONFIG_USE_LWIP=1"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "ESP_MDNS_VERSION_NUMBER=\"1.8.2\""
+				},
+				{
+					"backtrace" : 14,
+					"define" : "ESP_PLATFORM"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "IDF_VER=\"v5.3.2\""
+				},
+				{
+					"backtrace" : 5,
+					"define" : "LV_CONF_INCLUDE_SIMPLE"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "MBEDTLS_CONFIG_FILE=\"mbedtls/esp_config.h\""
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_MMU_PAGE_SIZE=CONFIG_MMU_PAGE_SIZE"
+				},
+				{
+					"backtrace" : 2,
+					"define" : "SOC_XTAL_FREQ_MHZ=CONFIG_XTAL_FREQ"
+				},
+				{
+					"backtrace" : 5,
+					"define" : "UNITY_INCLUDE_CONFIG_H"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "_GLIBCXX_HAVE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "_GLIBCXX_USE_POSIX_SEMAPHORE"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "_GNU_SOURCE"
+				},
+				{
+					"backtrace" : 14,
+					"define" : "_POSIX_READER_WRITER_LOCKS"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 15,
+					"path" : "/home/david/esp/panel_matter/build/config"
+				},
+				{
+					"backtrace" : 17,
+					"path" : "/home/david/components/esp_jpeg/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/newlib/platform_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/freertos/config/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/freertos/config/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/freertos/config/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/freertos/FreeRTOS-Kernel/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/freertos/FreeRTOS-Kernel/portable/xtensa/include/freertos"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/freertos/esp_additions/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_hw_support/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_hw_support/include/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_hw_support/include/soc/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_hw_support/dma/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_hw_support/ldo/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_hw_support/port/esp32s3/."
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_hw_support/port/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/heap/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/log/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/soc/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/soc/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/soc/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/hal/platform_port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/hal/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/hal/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_rom/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_rom/include/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_rom/esp32s3"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_common/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_system/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_system/port/soc"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/esp_system/port/include/private"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/xtensa/esp32s3/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/xtensa/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/xtensa/deprecated_include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/lwip/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/lwip/include/apps"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/lwip/include/apps/sntp"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/lwip/lwip/src/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/lwip/port/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/lwip/port/freertos/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/lwip/port/esp32xx/include"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/lwip/port/esp32xx/include/arch"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/david/esp/esp-idf/components/lwip/port/esp32xx/include/sys"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/driver/deprecated"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/driver/i2c/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/driver/touch_sensor/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/driver/twai/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/driver/touch_sensor/esp32s3/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_pm/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_ringbuf/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_gpio/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_pcnt/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_gptimer/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_spi/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_mcpwm/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_ana_cmpr/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_i2s/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_sdmmc/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/sdmmc/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_sdspi/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_sdio/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_dac/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_rmt/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_tsens/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_sdm/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_i2c/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_uart/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/vfs/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_ledc/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_parlio/include"
+				},
+				{
+					"backtrace" : 18,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_usb_serial_jtag/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/david/components/usb_stream/include"
+				},
+				{
+					"backtrace" : 6,
+					"path" : "/home/david/esp/esp-idf/components/usb/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/usb_cam/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/bsp/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/i2c_bsp/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/lcd_touch/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_lcd/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_lcd/interface"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_lcd/rgb/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/lcd_bsp/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/fatfs/diskio"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/fatfs/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/fatfs/vfs"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/wear_levelling/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_partition/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/main/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/mbedtls/port/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/mbedtls/mbedtls/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/mbedtls/mbedtls/library"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/mbedtls/esp_crt_bundle/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/everest/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/mbedtls/mbedtls/3rdparty/p256-m/p256-m"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_app_format/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_bootloader_format/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/app_update/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/bootloader_support/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/bootloader_support/bootloader_flash/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/efuse/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/efuse/esp32s3/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_mm/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/spi_flash/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/pthread/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_timer/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/app_trace/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_event/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/nvs_flash/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_phy/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_phy/esp32s3/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_vfs_console/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_netif/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/wpa_supplicant/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/wpa_supplicant/port/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/wpa_supplicant/esp_supplicant/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_coex/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_wifi/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_wifi/wifi_apps/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_wifi/wifi_apps/nan_app/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_wifi/include/local"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/unity/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/unity/unity/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/cmock/CMock/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/console"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/http_parser"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp-tls"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp-tls/esp-tls-crypto"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_adc/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_adc/interface"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_adc/esp32s3/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_adc/deprecated/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_isp/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_cam/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_cam/interface"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_jpeg/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_driver_ppa/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_eth/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_gdbstub/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_hid/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/tcp_transport/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_http_client/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_http_server/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_https_ota/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_https_server/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_psram/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/protobuf-c/protobuf-c"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/protocomm/include/common"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/protocomm/include/security"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/protocomm/include/transports"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/protocomm/include/crypto/srp6a"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/protocomm/proto-c"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/esp_local_ctrl/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/espcoredump/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/espcoredump/include/port/xtensa"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/idf_test/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/idf_test/include/esp32s3"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/ieee802154/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/json/cJSON"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/mqtt/esp-mqtt/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/nvs_sec_provider/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/perfmon/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/spiffs/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/touch_element/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/esp-idf/components/wifi_provisioning/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/DS18B20/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/avi"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/avi/jpeg-9a"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/espressif__button/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/lvgl_wifi_connect/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/espressif_esp_jpeg/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/lvgl"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/lvgl/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/lvgl/examples"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/lvgl/demos"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/lv_port/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/ntp_time/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/pwm/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/rd_03/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/relay/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/uart_rs485/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/wav_play/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/wifi_ota/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/xfer_http"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/components/xfer_http/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__esp_secure_cert_mgr/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__jsmn/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__json_parser/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__json_generator/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__mdns/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__esp_encrypted_img/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__rmaker_common/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__esp_diagnostics/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__cbor/port/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__esp_diag_data_store/src/rtc_store"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__esp_diag_data_store/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/managed_components/espressif__esp_insights/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/lib"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/platform/OpenThread"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/third_party/nlfaultinjection/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/third_party/nlassert/repo/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/third_party/nlio/repo/include"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/zzz_generated/app-common"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/build/esp-idf/esp-matter"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/components/esp_matter"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/components/esp_matter/utils"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/components/esp_matter_bridge"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/components/esp_matter_console"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/components/esp_matter/zap_common"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/platform/ESP32"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/platform/ESP32/bluedroid"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/platform/ESP32/nimble"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/src/platform/ESP32/route_hook"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/esp-matter/connectedhomeip/connectedhomeip/examples/platform/esp32"
+				},
+				{
+					"backtrace" : 5,
+					"path" : "/home/david/esp/panel_matter/components/wifi_conect"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 2,
+			"id" : "__idf_xtensa::@1daaaad7abe597e030f9"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_app_trace::@dd7eb3aa23293586d3b8"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_unity::@fec746937506b5690992"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_cmock::@38f9eb59693b7394f54c"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_console::@4311ed8d271cc0ee1422"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_driver_cam::@d005630ea6316acc7c7d"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_hid::@15df40e16a5d8775dd9b"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_https_server::@a47490a9e49b7eabdb18"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_lcd::@d5a84597e1633c9ab0d3"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_protobuf-c::@b14513c4bd859268ec22"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_protocomm::@d76d01c8dec06205e1fc"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp_local_ctrl::@d6aad58d2946e56208ef"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espcoredump::@718b9a7d55ab42cfc0a3"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_wear_levelling::@cb21b0d7c0815cff11c6"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_fatfs::@75ac1d9b25dacc8cc9e7"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_json::@c78a8bdc820334f01148"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_mqtt::@c1ab2c6a99226d1f4b56"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_nvs_sec_provider::@06580cba064af97f59fd"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_perfmon::@aac0f647c32bb8f54a67"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_spiffs::@df881b71474064c86689"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_touch_element::@01c672d9a2e23f1d367f"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "__idf_usb::@4a2418067d0bb57af462"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_wifi_provisioning::@9d7e7ffe1b15746c1098"
+		},
+		{
+			"backtrace" : 6,
+			"id" : "__idf_usb_stream::@238c96bbf65c9920b3c5"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__button::@ee0e5988f5003e3bfd20"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif_esp_jpeg::@86628f56f54b349e63b0"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_lvgl::@fef3440dd93e3bfaa8d6"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_xfer_http::@09c9ccebbadc55ec0b88"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__esp_secure_cert_mgr::@2137c484516755352d0e"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__json_parser::@78f6609d3363a7198fb3"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__json_generator::@c2fc9a05de0a69fdf4a9"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__mdns::@d92204a997f34ad8e688"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__esp_encrypted_img::@a19bf9401ff1afa12895"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__rmaker_common::@c6b174d45560089ccfa0"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__esp_diagnostics::@4d5ef9c3b0350e2a0d42"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__cbor::@b48c68098eeb87457809"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__esp_diag_data_store::@0812b0e2ee947b61146b"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_espressif__esp_insights::@68befea4f4c4b7b3584b"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_esp-matter::@8542c5e511cd54cdd440"
+		},
+		{
+			"backtrace" : 5,
+			"id" : "__idf_wifi_conect::@d0a906f64c0407689896"
+		}
+	],
+	"id" : "__idf_esp_jpeg::@a0f8e1365f9c571a9e84",
+	"name" : "__idf_esp_jpeg",
+	"nameOnDisk" : "libesp_jpeg.a",
+	"paths" : 
+	{
+		"build" : "esp-idf/esp_jpeg",
+		"source" : "/home/david/components/esp_jpeg"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 2,
+			"compileGroupIndex" : 0,
+			"path" : "/home/david/components/esp_jpeg/src/audio_malloc.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "STATIC_LIBRARY"
+}
