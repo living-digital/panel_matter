@@ -58,7 +58,7 @@ void ui_styles_init(void) {
     lv_style_init(&style_card);
     lv_style_set_bg_color(&style_card, COLOR_FONDO2);  // Color de fondo del card
     lv_style_set_bg_opa(&style_card, LV_OPA_COVER);    // Opacidad 100%
-    lv_style_set_border_width(&style_card, 2);         // Ancho del borde
+    lv_style_set_border_width(&style_card, 0);         // Ancho del borde
     lv_style_set_border_color(&style_card, COLOR_SECUNDARIO);  // Color del borde
     lv_style_set_radius(&style_card, 10);              // Radio de las esquinas
     lv_style_set_pad_all(&style_card, 10);             // Padding dentro del card

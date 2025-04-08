@@ -43,8 +43,9 @@ void app_main(void) {
     lv_obj_t *pantalla = base_screen();
     lv_scr_load(pantalla);
 
-    // Crear un card dentro de la pantalla
-    lv_obj_t *card1 = card_create(pantalla);
+    // Crear cards dentro de la pantalla
+    lv_obj_t *card1 = card_create(pantalla, 0, 0, 200, 100);
+    lv_obj_t *card2 = card_create(pantalla, 0, 110, 200, 200);
 
 
     // Actualización de la pantalla
