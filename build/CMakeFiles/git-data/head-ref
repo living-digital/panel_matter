@@ -1,8 +1,1 @@
-0000000000000000000000000000000000000000 21db336784c30206bdc83e603dac43d28d20e55f David Moreno <elarreglador@protonmail.com> 1743761693 +0200	commit (initial): primer commit
-21db336784c30206bdc83e603dac43d28d20e55f 21db336784c30206bdc83e603dac43d28d20e55f David Moreno <elarreglador@protonmail.com> 1743761698 +0200	Branch: renamed refs/heads/master to refs/heads/main
-21db336784c30206bdc83e603dac43d28d20e55f 73ebde245d7aef1468b91bf239c1d948a1fe91d7 David Moreno <elarreglador@protonmail.com> 1743763865 +0200	commit: Primera compilacion funcional
-73ebde245d7aef1468b91bf239c1d948a1fe91d7 29424352061188110e18db766e6fb8ca0e2c7184 David Moreno <elarreglador@protonmail.com> 1743774713 +0200	commit: Funcionalidad lvgl
-29424352061188110e18db766e6fb8ca0e2c7184 9d592d8a83d163f8a212249b2c822f515a219f17 David Moreno <elarreglador@protonmail.com> 1743774789 +0200	commit: Actualizado readme
-9d592d8a83d163f8a212249b2c822f515a219f17 79c34630e7165f5a3a1cea24dada4720f1d2f7b4 David Moreno <elarreglador@protonmail.com> 1743777665 +0200	commit: Muestra ip actual en pantalla
-79c34630e7165f5a3a1cea24dada4720f1d2f7b4 99648323f7b39ff3b618335d9dcf4661cda2c89f David Moreno <elarreglador@protonmail.com> 1744021936 +0200	commit: Muestra ip y resolucion en pantalla
-99648323f7b39ff3b618335d9dcf4661cda2c89f 8467d5b845e2504d8f44fc27b8708a277734ec3a David Moreno <elarreglador@protonmail.com> 1744105315 +0200	commit: centrarnos en lvgl y crear la estructura UX básica para nuestro panel de control.
+1d3b32ae81393175312aa3ea3c0b0268f4aabf6b
