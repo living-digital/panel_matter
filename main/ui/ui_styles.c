@@ -46,6 +46,7 @@ void ui_styles_init(void) {
     lv_style_set_bg_opa(&style_fondo, LV_OPA_COVER);  // opacidad al 100%
     lv_style_set_border_width(&style_fondo, 0); // Esto elimina el borde blanco
     lv_style_set_radius(&style_fondo, 0);        // Elimina el radio de las esquinas
+    lv_style_set_pad_all(&style_fondo, 20);  // Esto agrega el padding
 
 
     // === Estilo de texto principal ===

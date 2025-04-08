@@ -11,8 +11,5 @@ lv_obj_t * base_screen() {
     // Asegurarse de que el objeto de la pantalla ocupe toda la pantalla
     lv_obj_set_size(pantalla, lv_disp_get_hor_res(NULL), lv_disp_get_ver_res(NULL));
 
-    // padding
-    lv_style_set_pad_all(&style_fondo, 5);
-
     return pantalla;
 }
