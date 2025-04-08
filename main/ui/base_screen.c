@@ -1,17 +1,18 @@
 #include "base_screen.h"
+#include "ui_styles.h"  
 
-lv_obj_t *base_screen_create_color(lv_color_t color)
-{
-    lv_obj_t *scr = lv_obj_create(NULL);
-    lv_obj_set_style_bg_color(scr, color, LV_PART_MAIN);
-    lv_obj_set_style_bg_opa(scr, LV_OPA_COVER, LV_PART_MAIN);
-    return scr;
-}
+lv_obj_t * base_screen() {
+    // Crear el objeto de la pantalla
+    lv_obj_t * pantalla = lv_obj_create(lv_scr_act());
 
-lv_obj_t *base_screen_create_image(const lv_img_dsc_t *img)
-{
-    lv_obj_t *scr = lv_obj_create(NULL);
-    lv_obj_set_style_bg_img_src(scr, img, LV_PART_MAIN);
-    lv_obj_set_style_bg_opa(scr, LV_OPA_COVER, LV_PART_MAIN);
-    return scr;
+    // Configurar el estilo de fondo con el color de fondo del tema
+    lv_obj_add_style(pantalla, &style_fondo, 0);
+
+    // Asegurarse de que el objeto de la pantalla ocupe toda la pantalla
+    lv_obj_set_size(pantalla, lv_disp_get_hor_res(NULL), lv_disp_get_ver_res(NULL));
+
+    // padding
+    lv_style_set_pad_all(&style_fondo, 5);
+
+    return pantalla;
 }

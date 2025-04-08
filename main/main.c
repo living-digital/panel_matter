@@ -39,8 +39,7 @@ void app_main(void) {
     ui_styles_init();
 
     // Pantalla de fondo
-    lv_color_t color_fondo = lv_color_hex(0x07243b);
-    lv_obj_t * pantalla = base_screen_create_color(color_fondo);
+    lv_obj_t * pantalla = base_screen();
     lv_scr_load(pantalla);
 
     // Crear un label para mostrar IP
@@ -50,7 +49,7 @@ void app_main(void) {
     lv_obj_t * label1 = lv_label_create(pantalla);
     lv_obj_add_style(label1, &style_texto_principal, 0);
     lv_label_set_text(label1, texto_ip);
-    lv_obj_align(label1, LV_ALIGN_TOP_MID, 0, 10);
+    lv_obj_align(label1, LV_ALIGN_CENTER, 0, 10);
 
     // Crear un label para mostrar resolución
     lv_coord_t hor_res = lv_disp_get_hor_res(NULL);
@@ -62,5 +61,11 @@ void app_main(void) {
     lv_obj_t *label2 = lv_label_create(pantalla);
     lv_obj_add_style(label2, &style_texto_principal, 0);
     lv_label_set_text(label2, texto_res);
-    lv_obj_align(label2, LV_ALIGN_TOP_MID, 0, 40);
+    lv_obj_align(label2, LV_ALIGN_CENTER, 0, 40);
+
+    // Actualización de la pantalla
+    while (1) {
+        lv_task_handler();  // Maneja los eventos de LVGL
+        vTaskDelay(pdMS_TO_TICKS(10));  // Retardo de 10ms
+    }
 }
