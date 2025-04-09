@@ -17,6 +17,8 @@
 #include "ui/ui_styles.h"
 #include "ui/base_screen.h"
 #include "ui/card.h"
+#include "ui/subcard.h"
+
 // conexión wifi
 #include "wifi_conect.h"
 
@@ -48,6 +50,13 @@ void app_main(void) {
     lv_obj_t *card2 = card_create(pantalla, 0, 110, 200, 200); // centr. izq.
     lv_obj_t *card3 = card_create(pantalla, 0, 320, 200, 120); // inf. izq
     lv_obj_t *card4 = card_create(pantalla, 210, 0, 230, 440); // der. 
+
+    // Crear subcards dentro de card4
+    lv_obj_t *subcard1 = subcard_create(card4, 0, 160, 100, 100); // sup. izq.
+    lv_obj_t *subcard2 = subcard_create(card4, 110, 160, 100, 100); // sup. der. 
+    lv_obj_t *subcard3 = subcard_create(card4, 0, 270, 100, 100); // sup. izq.
+    lv_obj_t *subcard4 = subcard_create(card4, 110, 270, 100, 100); // sup. der. 
+    lv_obj_t *subcard5 = subcard_create(card4, 0, 380, 210, 40); // sup. der.
 
 
     // Actualización de la pantalla

@@ -1,14 +1,17 @@
 idf_component_register(
-    SRC_DIRS
-        "."
-        "ui"
+    SRCS
+        "main.c"
+        "ui/base_screen.c"
+        "ui/card.c"
+        "ui/subcard.c"
+        "ui/ui_styles.c"
     INCLUDE_DIRS
         "include"
         "ui"
     PRIV_REQUIRES
         lvgl
-	bsp
+        bsp
         lv_port
-	spiffs
-	wifi_conect
+        spiffs
+        wifi_conect
 )

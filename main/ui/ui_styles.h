@@ -7,6 +7,8 @@
 extern lv_style_t style_fondo;
 extern lv_style_t style_texto_principal;
 extern lv_style_t style_card;
+extern lv_style_t style_subcard;
+
 
 void ui_styles_init(void);
 
