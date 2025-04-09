@@ -5,7 +5,7 @@
 
 // Declaración de los estilos para ser usados en otros archivos
 extern lv_style_t style_fondo;
-extern lv_style_t style_texto_principal;
+extern lv_style_t style_titulo1;
 extern lv_style_t style_card;
 extern lv_style_t style_subcard;
 
