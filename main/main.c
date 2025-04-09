@@ -58,11 +58,17 @@ void app_main(void) {
     lv_obj_t *subcard4 = subcard_create(card4, 110, 270, 100, 100); // sup. der. 
     lv_obj_t *subcard5 = subcard_create(card4, 0, 380, 210, 40); // sup. der.
 
-    // Crear un texto dentro de card4
+    // Crear labels dentro de card4
     lv_obj_t *label1 = lv_label_create(card4);
-    lv_label_set_text(label1, "12:00");
     lv_obj_add_style(label1, &style_titulo1, 0); 
-    
+    lv_obj_align(label1, LV_ALIGN_TOP_LEFT, 0, 0);
+    lv_label_set_text(label1, "12:00");
+
+    lv_obj_t *label2 = lv_label_create(card4);
+    lv_obj_add_style(label2, &style_texto1, 0); 
+    lv_obj_align(label2, LV_ALIGN_TOP_LEFT, 0, 60);
+    lv_label_set_text(label2, "Miercoles, 9 de abril 2024");
+
     // Actualización de la pantalla
     while (1) {
         lv_task_handler();  // Maneja los eventos de LVGL

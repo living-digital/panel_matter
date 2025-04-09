@@ -37,6 +37,9 @@
 // Declaraciones de estilos
 lv_style_t style_fondo;
 lv_style_t style_titulo1;
+lv_style_t style_titulo2;
+lv_style_t style_texto1;
+lv_style_t style_texto2;
 lv_style_t style_card;
 lv_style_t style_subcard;
 
@@ -49,12 +52,29 @@ void ui_styles_init(void) {
     lv_style_set_radius(&style_fondo, 0);        // Elimina el radio de las esquinas
     lv_style_set_pad_all(&style_fondo, 20);  // Esto agrega el padding
 
-    // === Estilo de texto principal ===
+    // === Estilo de titulo1 ===
     lv_style_init(&style_titulo1);
     lv_style_set_text_color(&style_titulo1, COLOR_PRIMARIO);
-    // lv_style_set_text_font(&style_titulo1, &lv_font_montserrat_14);
     lv_style_set_text_font(&style_titulo1, &lv_font_montserrat_48);
     lv_style_set_text_align(&style_titulo1, LV_TEXT_ALIGN_LEFT);
+
+    // === Estilo de titulo2 ===
+    lv_style_init(&style_titulo2);
+    lv_style_set_text_color(&style_titulo2, COLOR_PRIMARIO);
+    lv_style_set_text_font(&style_titulo2, &lv_font_montserrat_22);
+    lv_style_set_text_align(&style_titulo2, LV_TEXT_ALIGN_LEFT);
+
+    // === Estilo de texto1 ===
+    lv_style_init(&style_texto1);
+    lv_style_set_text_color(&style_texto1, COLOR_PRIMARIO);
+    lv_style_set_text_font(&style_texto1, &lv_font_montserrat_16);
+    lv_style_set_text_align(&style_texto1, LV_TEXT_ALIGN_LEFT);
+
+    // === Estilo de texto2 ===
+    lv_style_init(&style_texto2);
+    lv_style_set_text_color(&style_texto2, COLOR_PRIMARIO);
+    lv_style_set_text_font(&style_texto2, &lv_font_montserrat_8);
+    lv_style_set_text_align(&style_texto2, LV_TEXT_ALIGN_LEFT);
 
     // === Estilo de card ===
     lv_style_init(&style_card);
