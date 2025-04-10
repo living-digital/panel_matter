@@ -1,7 +1,12 @@
 #include <string.h>
+#include <stdio.h>
 
 #include "freertos/FreeRTOS.h"
 #include "freertos/event_groups.h"
+
+#include "lwip/netdb.h"
+#include "lwip/sockets.h"
+
 #include "esp_event.h"
 #include "esp_log.h"
 #include "esp_wifi.h"
@@ -13,8 +18,6 @@
 #include "esp_netif_ip_addr.h"
 #include "esp_wifi.h"
 #include "wifi_conect.h"
-
-
 
 
 static const char *TAG = "wifi_conect";
@@ -171,6 +174,46 @@ bool wifi_conect_is_connected(void)
     } else {
         return false;
     }
+}
+
+// Indica si hay acceso a internet
+bool internet_connected_ip(void) {
+    int sock;
+    struct sockaddr_in server_addr;
+    const char *server_ip = "8.8.8.8";  // Puedes usar la IP de Google DNS, por ejemplo.
+    int port = 53; // Utilizamos el puerto 53 (DNS).
+    struct timeval timeout = {5, 0};  // 5 segundos de timeout.
+
+    // Crear el socket
+    sock = socket(AF_INET, SOCK_STREAM, IPPROTO_IP);
+    if (sock < 0) {
+        ESP_LOGE(TAG, "Error al crear el socket");
+        return false;
+    }
+
+    // Configuramos los tiempos de espera (envío y recepción)
+    setsockopt(sock, SOL_SOCKET, SO_SNDTIMEO, &timeout, sizeof(timeout));
+    setsockopt(sock, SOL_SOCKET, SO_RCVTIMEO, &timeout, sizeof(timeout));
+
+    memset(&server_addr, 0, sizeof(server_addr));
+    server_addr.sin_family = AF_INET;
+    server_addr.sin_port = htons(port);
+    if (inet_aton(server_ip, &server_addr.sin_addr) == 0) {
+        ESP_LOGE(TAG, "IP inválida: %s", server_ip);
+        close(sock);
+        return false;
+    }
+
+    // Intentar conectarse al servidor
+    if (connect(sock, (struct sockaddr *)&server_addr, sizeof(server_addr)) < 0) {
+        ESP_LOGE(TAG, "Fallo en la conexión a %s en el puerto %d", server_ip, port);
+        close(sock);
+        return false;
+    }
+
+    ESP_LOGI(TAG, "Conexión exitosa a %s en el puerto %d", server_ip, port);
+    close(sock);
+    return true;
 }
 
 

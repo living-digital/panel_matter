@@ -30,3 +30,5 @@ esp_err_t wifi_conect_disconnect(void);
 // Indica si estamos conectados a una red wifi o no
 bool wifi_conect_is_connected(void);
 
+// Indica si estamos conectados internet
+bool internet_connected_ip(void);

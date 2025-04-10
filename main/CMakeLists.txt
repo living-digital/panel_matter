@@ -14,4 +14,5 @@ idf_component_register(
         lv_port
         spiffs
         wifi_conect
+	time_api
 )

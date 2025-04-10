@@ -1,0 +1,331 @@
+[0;32mI (96) boot:  3 storage          Unknown data     01 82 0ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x8 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40056f6f
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3820,len:0x19fc
+load:0x403c9700,len:0x4
+load:0x403c9704,len:0xdd0
+load:0x403cc700,len:0x3120
+entry 0x403c992c
+[0;32mI (26) boot: ESP-IDF v5.2.3 2nd stage bootloader[0m
+[0;32mI (27) boot: compile time Apr 10 2025 09:46:52[0m
+[0;32mI (27) boot: Multicore bootloader[0m
+[0;32mI (30) boot: chip revision: v0.2[0m
+[0;32mI (33) boot: efuse block revision: v1.3[0m
+[0;32mI (38) qio_mode: Enabling default flash chip QIO[0m
+[0;32mI (43) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (48) boot.esp32s3: SPI Mode       : QIO[0m
+[0;32mI (53) boot.esp32s3: SPI Flash Size : 16MB[0m
+[0;32mI (58) boot: Enabling RNG early entropy source...[0m
+[0;32mI (63) boot: Partition Table:[0m
+[0;32mI (67) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (74) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (81) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (89) boot:  2 factory          factory app      00 00 00010000 002ee000[0m
+[0;32mI (96) boot:  3 storage          Unknown data     01 82 002fe000 00200000[0m
+[0;32mI (104) boot: End of partition table[0m
+[0;32mI (108) esp_image: segment 0: paddr=00010020 vaddr=3c0c0020 size=4ab00h (305920) map[0m
+[0;32mI (162) esp_image: segment 1: paddr=0005ab28 vaddr=3fc9ed00 size=04f10h ( 20240) load[0m
+[0;32mI (166) esp_image: segment 2: paddr=0005fa40 vaddr=40378000 size=005d8h (  1496) load[0m
+[0;32mI (168) esp_image: segment 3: paddr=00060020 vaddr=42000020 size=b4714h (739092) map[0m
+[0;32mI (286) esp_image: segment 4: paddr=0011473c vaddr=403785d8 size=16698h ( 91800) load[0m
+[0;32mI (313) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (313) boot: Disabling RNG early entropy source...[0m
+[0;32mI (314) cpu_start: Multicore app[0m
+[0;32mI (318) octal_psram: vendor id    : 0x0d (AP)[0m
+[0;32mI (322) octal_psram: dev id       : 0x02 (generation 3)[0m
+[0;32mI (328) octal_psram: density      : 0x03 (64 Mbit)[0m
+[0;32mI (334) octal_psram: good-die     : 0x01 (Pass)[0m
+[0;32mI (339) octal_psram: Latency      : 0x01 (Fixed)[0m
+[0;32mI (344) octal_psram: VCC          : 0x01 (3V)[0m
+[0;32mI (349) octal_psram: SRF          : 0x01 (Fast Refresh)[0m
+[0;32mI (355) octal_psram: BurstType    : 0x01 (Hybrid Wrap)[0m
+[0;32mI (361) octal_psram: BurstLen     : 0x01 (32 Byte)[0m
+[0;32mI (366) octal_psram: Readlatency  : 0x02 (10 cycles@Fixed)[0m
+[0;32mI (373) octal_psram: DriveStrength: 0x00 (1/1)[0m
+[0;32mI (378) MSPI Timing: PSRAM timing tuning index: 5[0m
+[0;32mI (383) esp_psram: Found 8MB PSRAM device[0m
+[0;32mI (388) esp_psram: Speed: 80MHz[0m
+[0;32mI (444) mmu_psram: Instructions copied and mapped to SPIRAM[0m
+[0;32mI (463) mmu_psram: Read only data copied and mapped to SPIRAM[0m
+[0;32mI (711) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (719) cpu_start: Pro cpu start user code[0m
+[0;32mI (719) cpu_start: cpu freq: 240000000 Hz[0m
+[0;32mI (719) cpu_start: Application information:[0m
+[0;32mI (719) cpu_start: Project name:     lvgl_demo[0m
+[0;32mI (720) cpu_start: App version:      v0.4.0-2-ge8cf7fd-dirty[0m
+[0;32mI (720) cpu_start: Compile time:     Apr 10 2025 09:46:40[0m
+[0;32mI (720) cpu_start: ELF file SHA256:  98f407a2ae41cff6...[0m
+[0;32mI (720) cpu_start: ESP-IDF:          v5.2.3[0m
+[0;32mI (720) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (721) cpu_start: Max chip rev:     v0.99 [0m
+[0;32mI (721) cpu_start: Chip rev:         v0.2[0m
+[0;32mI (721) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (721) heap_init: At 3FCB7D18 len 000319F8 (198 KiB): RAM[0m
+[0;32mI (722) heap_init: At 3FCE9710 len 00005724 (21 KiB): RAM[0m
+[0;32mI (722) heap_init: At 600FE010 len 00001FD8 (7 KiB): RTCRAM[0m
+[0;32mI (722) esp_psram: Adding pool of 7104K of PSRAM memory to heap allocator[0m
+[0;32mI (723) spi_flash: detected chip: gd[0m
+[0;32mI (723) spi_flash: flash io: qio[0m
+[0;33mW (723) i2c: This driver is an old driver, please migrate your application code to adapt `driver/i2c_master.h`[0m
+[0;32mI (723) sleep: Configure to isolate all GPIO pins in sleep state[0m
+[0;32mI (724) sleep: Enable automatic switching of GPIO sleep configuration[0m
+[0;32mI (724) main_task: Started on CPU0[0m
+[0;32mI (734) esp_psram: Reserving pool of 8K of internal memory for DMA/internal allocations[0m
+[0;32mI (734) main_task: Calling app_main()[0m
+[0;32mI (734) wifi_conect: Usando IP estática: 192.168.18.250[0m
+[0;32mI (734) pp: pp rom version: e7ae62f[0m
+[0;32mI (734) net80211: net80211 rom version: e7ae62f[0m
+[0;32mI (754) wifi:wifi driver task: 3fcc41c4, prio:23, stack:6656, core=0[0m
+[0;32mI (754) wifi:wifi firmware version: 82f54d2[0m
+[0;32mI (754) wifi:wifi certification version: v7.0[0m
+[0;32mI (754) wifi:config NVS flash: enabled[0m
+[0;32mI (754) wifi:config nano formating: disabled[0m
+[0;32mI (754) wifi:Init data frame dynamic rx buffer num: 32[0m
+[0;32mI (754) wifi:Init static rx mgmt buffer num: 5[0m
+[0;32mI (754) wifi:Init management short buffer num: 32[0m
+[0;32mI (754) wifi:Init static tx buffer num: 16[0m
+[0;32mI (754) wifi:Init tx cache buffer num: 32[0m
+[0;32mI (754) wifi:Init static tx FG buffer num: 2[0m
+[0;32mI (754) wifi:Init static rx buffer size: 1600[0m
+[0;32mI (754) wifi:Init static rx buffer num: 10[0m
+[0;32mI (754) wifi:Init dynamic rx buffer num: 32[0m
+[0;32mI (754) wifi_init: rx ba win: 6[0m
+[0;32mI (754) wifi_init: tcpip mbox: 32[0m
+[0;32mI (754) wifi_init: udp mbox: 6[0m
+[0;32mI (754) wifi_init: tcp mbox: 6[0m
+[0;32mI (754) wifi_init: tcp tx win: 5744[0m
+[0;32mI (754) wifi_init: tcp rx win: 5744[0m
+[0;32mI (754) wifi_init: tcp mss: 1440[0m
+[0;32mI (754) wifi_init: WiFi/LWIP prefer SPIRAM[0m
+[0;32mI (754) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (754) wifi_init: WiFi RX IRAM OP enabled[0m
+[0;32mI (764) phy_init: phy_version 680,a6008b2,Jun  4 2024,16:41:10[0m
+[0;33mW (764) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;33mW (804) phy_init: saving new calibration data because of checksum failure, mode(2)[0m
+[0;32mI (804) wifi:mode : sta (dc:da:0c:57:09:38)[0m
+[0;32mI (804) wifi:enable tsf[0m
+[0;32mI (814) wifi_conect: Connecting to WiFi...[0m
+[0;32mI (2414) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1[0m
+[0;32mI (2414) wifi:state: init -> auth (b0)[0m
+[0;32mI (2434) wifi:state: auth -> assoc (0)[0m
+[0;32mI (2444) wifi:state: assoc -> run (10)[0m
+[0;32mI (2474) wifi:<ba-add>idx:0 (ifx:0, 84:aa:9c:4b:60:6f), tid:0, ssn:0, winSize:64[0m
+[0;32mI (2494) wifi:connected with MOVISTAR_606E, aid = 1, channel 11, BW20, bssid = 84:aa:9c:4b:60:6f[0m
+[0;32mI (2494) wifi:security: WPA2-PSK, phy: bgn, rssi: -45[0m
+[0;32mI (2504) wifi:pm start, type: 1[0m
+
+[0;32mI (2504) wifi:dp: 1, bi: 102400, li: 3, scale listen interval from 307200 us to 307200 us[0m
+[0;32mI (2504) wifi:set rx beacon pti, rx_bcn_pti: 0, bcn_timeout: 25000, mt_pti: 0, mt_time: 10000[0m
+[0;32mI (2504) esp_netif_handlers: sta ip: 192.168.18.250, mask: 255.255.255.0, gw: 192.168.18.1[0m
+[0;32mI (2504) wifi_conect: Connected to SSID: MOVISTAR_606E[0m
+[0;32mI (2504) wifi_conect: Conexión con IP estática:[0m
+[0;32mI (2504) wifi_conect:   IP      : 192.168.18.250[0m
+[0;32mI (2504) wifi_conect:   Gateway : 192.168.18.1[0m
+[0;32mI (2504) wifi_conect:   Máscara : 255.255.255.0[0m
+[0;32mI (2504) i2c_bus: i2c0 bus inited[0m
+[0;32mI (2504) error: sys_int
+[0m
+[0;32mI (2514) error: sys_int
+[0m
+[0;32mI (2514) gpio: GPIO[38]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2514) gpio: GPIO[39]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2514) gpio: GPIO[40]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2514) st7701: st7701 register init[0m
+[0;32mI (2574) wifi:AP's beacon interval = 102400 us, DTIM period = 3[0m
+[0;32mI (2884) gpio: GPIO[1]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (2904) gt911: tp driver ic:GT911[0m
+[0;32mI (2904) gt911: tp config version:0x61[0m
+[0;32mI (2914) gt911: gt911 init ok[0m
+[0;32mI (2914) lvgl_init: lv_init
+[0m
+[0;32mI (2934) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (3044) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (3154) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (3264) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (3374) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (3484) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (3604) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (3714) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (3814) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (3924) MAIN: 0:0:1[0m
+[0;32mI (4924) MAIN: 0:0:2[0m
+[0;32mI (5924) MAIN: 0:0:3[0m
+[0;32mI (6924) MAIN: 0:0:4[0m
+[0;32mI (7924) MAIN: 0:0:5[0m
+[0;32mI (8924) MAIN: 0:0:6[0m
+[0;32mI (9924) MAIN: 0:0:7[0m
+[0;32mI (10924) MAIN: 0:0:8[0m
+[0;32mI (11924) MAIN: 0:0:9[0m
+[0;32mI (12924) MAIN: 0:0:10[0m
+[0;32mI (13924) MAIN: 0:0:11[0m
+[0;32mI (14924) MAIN: 0:0:12[0m
+[0;32mI (15924) MAIN: 0:0:13[0m
+[0;32mI (16924) MAIN: 0:0:14[0m
+[0;32mI (17924) MAIN: 0:0:15[0m
+[0;32mI (18924) MAIN: 0:0:16[0m
+[0;32mI (19924) MAIN: 0:0:17[0m
+[0;32mI (20924) MAIN: 0:0:18[0m
+[0;32mI (21924) MAIN: 0:0:19[0m
+[0;32mI (22924) MAIN: 0:0:20[0m
+[0;32mI (23924) MAIN: 0:0:21[0m
+[0;32mI (24924) MAIN: 0:0:22[0m
+[0;32mI (25924) MAIN: 0:0:23[0m
+[0;32mI (26924) MAIN: 0:0:24[0m
+[0;32mI (27924) MAIN: 0:0:25[0m
+[0;32mI (28924) MAIN: 0:0:26[0m
+[0;32mI (29924) MAIN: 0:0:27[0m
+[0;32mI (30924) MAIN: 0:0:28[0m
+[0;32mI (31924) MAIN: 0:0:29[0m
+[0;32mI (32924) MAIN: 0:0:30[0m
+[0;32mI (33924) MAIN: 0:0:31[0m
+[0;32mI (34924) MAIN: 0:0:32[0m
+[0;32mI (35924) MAIN: 0:0:33[0m
+[0;32mI (36924) MAIN: 0:0:34[0m
+[0;32mI (37924) MAIN: 0:0:35[0m
+[0;32mI (38924) MAIN: 0:0:36[0m
+[0;32mI (39924) MAIN: 0:0:37[0m
+[0;32mI (40924) MAIN: 0:0:38[0m
+[0;32mI (41924) MAIN: 0:0:39[0m
+[0;32mI (42924) MAIN: 0:0:40[0m
+[0;32mI (43924) MAIN: 0:0:41[0m
+[0;32mI (44924) MAIN: 0:0:42[0m
+[0;32mI (45924) MAIN: 0:0:43[0m
+[0;32mI (46924) MAIN: 0:0:44[0m
+[0;32mI (47924) MAIN: 0:0:45[0m
+[0;32mI (48924) MAIN: 0:0:46[0m
+[0;32mI (49924) MAIN: 0:0:47[0m
+[0;32mI (50924) MAIN: 0:0:48[0m
+[0;32mI (51924) MAIN: 0:0:49[0m
+[0;32mI (52924) MAIN: 0:0:50[0m
+[0;32mI (53924) MAIN: 0:0:51[0m
+[0;32mI (54924) MAIN: 0:0:52[0m
+[0;32mI (55924) MAIN: 0:0:53[0m
+[0;32mI (56924) MAIN: 0:0:54[0m
+[0;32mI (57924) MAIN: 0:0:55[0m
+[0;32mI (58924) MAIN: 0:0:56[0m
+[0;32mI (59924) MAIN: 0:0:57[0m
+[0;32mI (60924) MAIN: 0:0:58[0m
+[0;32mI (61924) MAIN: 0:0:59[0m
+[0;32mI (62924) MAIN: 0:1:0[0m
+[0;32mI (62944) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (63084) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (63204) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (63324) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (63514) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (63624) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (63734) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (63884) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (63994) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (64104) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (64204) MAIN: 0:1:1[0m
+[0;32mI (65204) MAIN: 0:1:2[0m
+[0;32mI (66204) MAIN: 0:1:3[0m
+[0;32mI (67204) MAIN: 0:1:4[0m
+[0;32mI (68204) MAIN: 0:1:5[0m
+[0;32mI (69204) MAIN: 0:1:6[0m
+[0;32mI (70204) MAIN: 0:1:7[0m
+[0;32mI (71204) MAIN: 0:1:8[0m
+[0;32mI (72204) MAIN: 0:1:9[0m
+[0;32mI (73204) MAIN: 0:1:10[0m
+[0;32mI (74204) MAIN: 0:1:11[0m
+[0;32mI (75204) MAIN: 0:1:12[0m
+[0;32mI (76204) MAIN: 0:1:13[0m
+[0;32mI (77204) MAIN: 0:1:14[0m
+[0;32mI (78204) MAIN: 0:1:15[0m
+[0;32mI (79204) MAIN: 0:1:16[0m
+[0;32mI (80204) MAIN: 0:1:17[0m
+[0;32mI (81204) MAIN: 0:1:18[0m
+[0;32mI (82204) MAIN: 0:1:19[0m
+[0;32mI (83204) MAIN: 0:1:20[0m
+[0;32mI (84204) MAIN: 0:1:21[0m
+[0;32mI (85204) MAIN: 0:1:22[0m
+[0;32mI (86204) MAIN: 0:1:23[0m
+[0;32mI (87204) MAIN: 0:1:24[0m
+[0;32mI (88204) MAIN: 0:1:25[0m
+[0;32mI (89204) MAIN: 0:1:26[0m
+[0;32mI (90204) MAIN: 0:1:27[0m
+[0;32mI (91204) MAIN: 0:1:28[0m
+[0;32mI (92204) MAIN: 0:1:29[0m
+[0;32mI (93204) MAIN: 0:1:30[0m
+[0;32mI (94204) MAIN: 0:1:31[0m
+[0;32mI (95204) MAIN: 0:1:32[0m
+[0;32mI (96204) MAIN: 0:1:33[0m
+[0;32mI (97204) MAIN: 0:1:34[0m
+[0;32mI (98204) MAIN: 0:1:35[0m
+[0;32mI (99204) MAIN: 0:1:36[0m
+[0;32mI (100204) MAIN: 0:1:37[0m
+[0;32mI (101204) MAIN: 0:1:38[0m
+[0;32mI (102204) MAIN: 0:1:39[0m
+[0;32mI (103204) MAIN: 0:1:40[0m
+[0;32mI (104204) MAIN: 0:1:41[0m
+[0;32mI (105204) MAIN: 0:1:42[0m
+[0;32mI (106204) MAIN: 0:1:43[0m
+[0;32mI (107204) MAIN: 0:1:44[0m
+[0;32mI (108204) MAIN: 0:1:45[0m
+[0;32mI (109204) MAIN: 0:1:46[0m
+[0;32mI (110204) MAIN: 0:1:47[0m
+[0;32mI (111204) MAIN: 0:1:48[0m
+[0;32mI (112204) MAIN: 0:1:49[0m
+[0;32mI (113204) MAIN: 0:1:50[0m
+[0;32mI (114204) MAIN: 0:1:51[0m
+[0;32mI (115204) MAIN: 0:1:52[0m
+[0;32mI (116204) MAIN: 0:1:53[0m
+[0;32mI (117204) MAIN: 0:1:54[0m
+[0;32mI (118204) MAIN: 0:1:55[0m
+[0;32mI (119204) MAIN: 0:1:56[0m
+[0;32mI (120204) MAIN: 0:1:57[0m
+[0;32mI (121204) MAIN: 0:1:58[0m
+[0;32mI (122204) MAIN: 0:1:59[0m
+[0;32mI (123204) MAIN: 0:2:0[0m
+[0;32mI (123214) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (123324) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (123434) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (123544) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (123654) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (123784) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (123904) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (124014) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (124124) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (124234) wifi_conect: Conexión exitosa a 8.8.8.8 en el puerto 53[0m
+[0;32mI (124334) MAIN: 0:2:1[0m
+[0;32mI (125334) MAIN: 0:2:2[0m
+[0;32mI (126334) MAIN: 0:2:3[0m
+[0;32mI (127334) MAIN: 0:2:4[0m
+[0;32mI (128334) MAIN: 0:2:5[0m
+[0;32mI (129334) MAIN: 0:2:6[0m
+[0;32mI (130334) MAIN: 0:2:7[0m
+[0;32mI (131334) MAIN: 0:2:8[0m
+[0;32mI (132334) MAIN: 0:2:9[0m
+[0;32mI (133334) MAIN: 0:2:10[0m
+[0;32mI (134334) MAIN: 0:2:11[0m
+[0;32mI (135334) MAIN: 0:2:12[0m
+[0;32mI (136334) MAIN: 0:2:13[0m
+[0;32mI (137334) MAIN: 0:2:14[0m
+[0;32mI (138334) MAIN: 0:2:15[0m
+[0;32mI (139334) MAIN: 0:2:16[0m
+[0;32mI (140334) MAIN: 0:2:17[0m
+[0;32mI (141334) MAIN: 0:2:18[0m
+[0;32mI (142334) MAIN: 0:2:19[0m
+[0;32mI (143334) MAIN: 0:2:20[0m
+[0;32mI (144334) MAIN: 0:2:21[0m
+[0;32mI (145334) MAIN: 0:2:22[0m
+[0;32mI (146334) MAIN: 0:2:23[0m
+[0;32mI (147334) MAIN: 0:2:24[0m
+[0;32mI (148334) MAIN: 0:2:25[0m
+[0;32mI (149334) MAIN: 0:2:26[0m
+[0;32mI (150334) MAIN: 0:2:27[0m
+[0;32mI (151334) MAIN: 0:2:28[0m
+[0;32mI (152334) MAIN: 0:2:29[0m
+[0;32mI (153334) MAIN: 0:2:30[0m
+[0;32mI (154334) MAIN: 0:2:31[0m
+[0;32mI (155334) MAIN: 0:2:32[0m
+[0;32mI (156334) MAIN: 0:2:33[0m
+[0;32mI (157334) MAIN: 0:2:34[0m
+[0;32mI (158334) MAIN: 0:2:35[0m
+[0;32mI (159334) MAIN: 0:2:36[0m
+[0;32mI (160334) MAIN: 0:2:37[0m
+[0;32mI (161334) MAIN: 0:2:38[0m
+[0;32mI (162334) MAIN: 0:2:39[0m

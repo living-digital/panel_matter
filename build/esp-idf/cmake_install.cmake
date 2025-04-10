@@ -454,6 +454,11 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
+  include("/home/david/esp/panel_matter/build/esp-idf/time_api/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
   include("/home/david/esp/panel_matter/build/esp-idf/main/cmake_install.cmake")
 endif()
 
