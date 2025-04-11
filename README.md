@@ -34,3 +34,4 @@ El sistema intentará reconectarse automáticamente si se pierde la conexión
 
 Desarrollado con ESP-IDF para ESP32-S3
  
+ 
