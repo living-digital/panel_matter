@@ -43,13 +43,41 @@ void app_main(void) {
     // conectamos a red wifi
     esp_err_t err;
     do {
-        err = wifi_conect("MOVISTAR_606E", "111D3321BD3B5C34AA26",
-                            "192.168.18.250", "192.168.18.1", "255.255.255.0");
+        err = wifi_conect(
+                "MOVISTAR_606E", 
+                "111D3321BD3B5C34AA26",
+                "192.168.18.250", 
+                "192.168.18.1", 
+                "255.255.255.0", 
+                "8.8.8.8");
         if (err != ESP_OK) {
             ESP_LOGW(TAG, "Error al intentar conectar (%d). Reintentando...", err);
             vTaskDelay(pdMS_TO_TICKS(1000));
         }
     } while (err != ESP_OK);
+
+    // Espera para dar margen de respuesta router
+    ESP_LOGW(TAG, "Pausa predefinida para respuesta wifi.");
+    vTaskDelay(pdMS_TO_TICKS(10000));
+
+    // verificamos conexion
+    if (wifi_conect_is_connected()){
+        ESP_LOGW(TAG, "Conexion wifi OK.");
+    } else {
+        ESP_LOGW(TAG, "Error al intentar conectar a wifi.");
+    }
+
+    if (internet_connected_ip()){
+        ESP_LOGW(TAG, "Conexion con IP conocida OK, hay acceso a internet.");
+    } else {
+        ESP_LOGW(TAG, "Error al intentar conectar a IP conocida.");
+    }
+
+    if (internet_connected_dns()){
+        ESP_LOGW(TAG, "Conexion con dominio conocido OK, hay acceso a internet.");
+    } else {
+        ESP_LOGW(TAG, "Error al intentar conectar a dominio conocido.");
+    }
 
     // inicializaciones
     sys_int();
@@ -90,11 +118,6 @@ void app_main(void) {
     lv_obj_align(labelNet, LV_ALIGN_TOP_LEFT, 0, 0);
     lv_label_set_text(labelNet, "labelNet");
 
-    vTaskDelay(pdMS_TO_TICKS(500));  // retardo 
-
-    ESP_LOGE(TAG, "Actualizado labelNet");
-    lv_label_set_text(labelNet, "LABELNET");
-    lv_event_send(labelNet, LV_EVENT_REFRESH, NULL); 
-
+    
 }
 
