@@ -33,3 +33,4 @@ Si estás usando IP fija, evita conflictos con el rango DHCP del router
 El sistema intentará reconectarse automáticamente si se pierde la conexión
 
 Desarrollado con ESP-IDF para ESP32-S3
+ 
