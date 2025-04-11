@@ -66,7 +66,7 @@
 /home/david/esp/panel_matter/build/esp-idf/wifi_provisioning/libwifi_provisioning.a
 /home/david/esp/panel_matter/build/esp-idf/lvgl/liblvgl.a
 /home/david/esp/panel_matter/build/esp-idf/wifi_conect/libwifi_conect.a
-/home/david/esp/panel_matter/build/esp-idf/time_api/libtime_api.a
+/home/david/esp/panel_matter/build/esp-idf/consultaApi/libconsultaApi.a
 /home/david/esp/panel_matter/build/esp-idf/main/libmain.a
 /home/david/esp/panel_matter/build/esp-idf/usb_stream/libusb_stream.a
 /home/david/esp/panel_matter/build/esp-idf/espressif__button/libespressif__button.a
