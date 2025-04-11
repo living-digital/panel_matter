@@ -26,8 +26,8 @@
 // conexión wifi
 #include "wifi_conect.h"
 
-// API sincronizacion reloj
-#include "time_api_client.h"
+// consultas API
+#include "consultaApi.h"
 
 
 // DEFINICIONES

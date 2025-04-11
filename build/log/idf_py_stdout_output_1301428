@@ -1,0 +1,121 @@
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32s3
+NOTICE: Processing 1 dependencies:
+NOTICE: [1/1] idf (5.2.3)
+-- Project sdkconfig file /home/david/esp/panel_matter/sdkconfig
+-- Compiler supported targets: xtensa-esp-elf
+-- App "lvgl_demo" version: v0.4.1-3-g1ecd6ae-dirty
+-- Adding linker script /home/david/esp/panel_matter/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script /home/david/esp/panel_matter/build/esp-idf/esp_system/ld/sections.ld.in
+-- Adding linker script /home/david/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.ld
+-- Adding linker script /home/david/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.api.ld
+-- Adding linker script /home/david/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.libgcc.ld
+-- Adding linker script /home/david/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.newlib.ld
+-- Adding linker script /home/david/esp/esp-idf/components/esp_rom/esp32s3/ld/esp32s3.rom.version.ld
+-- Adding linker script /home/david/esp/esp-idf/components/soc/esp32s3/ld/esp32s3.peripherals.ld
+-- Components: DS18B20 app_trace app_update avi bootloader bootloader_support bsp bt cmock console consultaApi cxx driver efuse esp-tls esp_adc esp_app_format esp_bootloader_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_jpeg esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump espressif__button espressif_esp_jpeg esptool_py fatfs freertos hal heap http_parser i2c_bsp idf_test ieee802154 json lcd_bsp lcd_touch log lv_port lvgl lvgl_wifi_connect lwip main mbedtls mqtt newlib ntp_time nvs_flash nvs_sec_provider openthread partition_table perfmon protobuf-c protocomm pthread pwm rd_03 relay sdmmc soc spi_flash spiffs tcp_transport touch_element uart_rs485 ulp unity usb usb_cam usb_stream vfs wav_play wear_levelling wifi_conect wifi_ota wifi_provisioning wpa_supplicant xfer_http xtensa
+-- Component paths: /home/david/components/DS18B20 /home/david/esp/esp-idf/components/app_trace /home/david/esp/esp-idf/components/app_update /home/david/components/avi /home/david/esp/esp-idf/components/bootloader /home/david/esp/esp-idf/components/bootloader_support /home/david/components/bsp /home/david/esp/esp-idf/components/bt /home/david/esp/esp-idf/components/cmock /home/david/esp/esp-idf/components/console /home/david/esp/panel_matter/components/consultaApi /home/david/esp/esp-idf/components/cxx /home/david/esp/esp-idf/components/driver /home/david/esp/esp-idf/components/efuse /home/david/esp/esp-idf/components/esp-tls /home/david/esp/esp-idf/components/esp_adc /home/david/esp/esp-idf/components/esp_app_format /home/david/esp/esp-idf/components/esp_bootloader_format /home/david/esp/esp-idf/components/esp_coex /home/david/esp/esp-idf/components/esp_common /home/david/esp/esp-idf/components/esp_eth /home/david/esp/esp-idf/components/esp_event /home/david/esp/esp-idf/components/esp_gdbstub /home/david/esp/esp-idf/components/esp_hid /home/david/esp/esp-idf/components/esp_http_client /home/david/esp/esp-idf/components/esp_http_server /home/david/esp/esp-idf/components/esp_https_ota /home/david/esp/esp-idf/components/esp_https_server /home/david/esp/esp-idf/components/esp_hw_support /home/david/components/esp_jpeg /home/david/esp/esp-idf/components/esp_lcd /home/david/esp/esp-idf/components/esp_local_ctrl /home/david/esp/esp-idf/components/esp_mm /home/david/esp/esp-idf/components/esp_netif /home/david/esp/esp-idf/components/esp_netif_stack /home/david/esp/esp-idf/components/esp_partition /home/david/esp/esp-idf/components/esp_phy /home/david/esp/esp-idf/components/esp_pm /home/david/esp/esp-idf/components/esp_psram /home/david/esp/esp-idf/components/esp_ringbuf /home/david/esp/esp-idf/components/esp_rom /home/david/esp/esp-idf/components/esp_system /home/david/esp/esp-idf/components/esp_timer /home/david/esp/esp-idf/components/esp_wifi /home/david/esp/esp-idf/components/espcoredump /home/david/components/espressif__button /home/david/components/espressif_esp_jpeg /home/david/esp/esp-idf/components/esptool_py /home/david/esp/esp-idf/components/fatfs /home/david/esp/esp-idf/components/freertos /home/david/esp/esp-idf/components/hal /home/david/esp/esp-idf/components/heap /home/david/esp/esp-idf/components/http_parser /home/david/components/i2c_bsp /home/david/esp/esp-idf/components/idf_test /home/david/esp/esp-idf/components/ieee802154 /home/david/esp/esp-idf/components/json /home/david/components/lcd_bsp /home/david/components/lcd_touch /home/david/esp/esp-idf/components/log /home/david/esp/panel_matter/components/lv_port /home/david/esp/panel_matter/components/lvgl /home/david/components/lvgl_wifi_connect /home/david/esp/esp-idf/components/lwip /home/david/esp/panel_matter/main /home/david/esp/esp-idf/components/mbedtls /home/david/esp/esp-idf/components/mqtt /home/david/esp/esp-idf/components/newlib /home/david/components/ntp_time /home/david/esp/esp-idf/components/nvs_flash /home/david/esp/esp-idf/components/nvs_sec_provider /home/david/esp/esp-idf/components/openthread /home/david/esp/esp-idf/components/partition_table /home/david/esp/esp-idf/components/perfmon /home/david/esp/esp-idf/components/protobuf-c /home/david/esp/esp-idf/components/protocomm /home/david/esp/esp-idf/components/pthread /home/david/components/pwm /home/david/components/rd_03 /home/david/components/relay /home/david/esp/esp-idf/components/sdmmc /home/david/esp/esp-idf/components/soc /home/david/esp/esp-idf/components/spi_flash /home/david/esp/esp-idf/components/spiffs /home/david/esp/esp-idf/components/tcp_transport /home/david/esp/esp-idf/components/touch_element /home/david/components/uart_rs485 /home/david/esp/esp-idf/components/ulp /home/david/esp/esp-idf/components/unity /home/david/esp/esp-idf/components/usb /home/david/components/usb_cam /home/david/components/usb_stream /home/david/esp/esp-idf/components/vfs /home/david/components/wav_play /home/david/esp/esp-idf/components/wear_levelling /home/david/esp/panel_matter/components/wifi_conect /home/david/components/wifi_ota /home/david/esp/esp-idf/components/wifi_provisioning /home/david/esp/esp-idf/components/wpa_supplicant /home/david/components/xfer_http /home/david/esp/esp-idf/components/xtensa
+-- Configuring done (4.0s)
+-- Generating done (0.4s)
+-- Build files have been written to: /home/david/esp/panel_matter/build
+[1/35] Building C object esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir/esp_app_desc.c.obj
+[2/35] Performing build step for 'bootloader'
+[1/1] cd /home/david/esp/panel_matter/build/bootloader/esp-idf/esptool_py && /home/david/.espressif/python_env/idf5.2_py3.12_env/bin/python /home/david/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/david/esp/panel_matter/build/bootloader/bootloader.bin
+Bootloader binary size 0x5950 bytes. 0x26b0 bytes (30%) free.
+[3/35] No install step for 'bootloader'
+[4/35] Linking C static library esp-idf/esp_app_format/libesp_app_format.a
+[5/35] Completed 'bootloader'
+[6/35] Linking C static library esp-idf/wifi_conect/libwifi_conect.a
+[7/35] Building C object esp-idf/consultaApi/CMakeFiles/__idf_consultaApi.dir/consultaApi.c.obj
+/home/david/esp/panel_matter/components/consultaApi/consultaApi.c: In function 'consultaApiGet':
+/home/david/esp/panel_matter/components/consultaApi/consultaApi.c:47:26: warning: initialization of 'esp_err_t (*)(esp_http_client_event_t *)' {aka 'int (*)(struct esp_http_client_event *)'} from incompatible pointer type 'size_t (*)(void *, char *, size_t)' {aka 'unsigned int (*)(void *, char *, unsigned int)'} [-Wincompatible-pointer-types]
+   47 |         .event_handler = http_event_handler,
+      |                          ^~~~~~~~~~~~~~~~~~
+/home/david/esp/panel_matter/components/consultaApi/consultaApi.c:47:26: note: (near initialization for 'config.event_handler')
+[8/35] Linking C static library esp-idf/consultaApi/libconsultaApi.a
+[9/35] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/card.c.obj
+[10/35] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/subcard.c.obj
+[11/35] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/base_screen.c.obj
+[12/35] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/ui/ui_styles.c.obj
+[13/35] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/main.c.obj
+/home/david/esp/panel_matter/main/main.c: In function 'app_main':
+/home/david/esp/panel_matter/main/main.c:101:15: warning: unused variable 'subcard4' [-Wunused-variable]
+  101 |     lv_obj_t *subcard4 = subcard_create(card4, 110, 270, 100, 100); // sup. der.
+      |               ^~~~~~~~
+/home/david/esp/panel_matter/main/main.c:100:15: warning: unused variable 'subcard3' [-Wunused-variable]
+  100 |     lv_obj_t *subcard3 = subcard_create(card4, 0, 270, 100, 100); // sup. izq.
+      |               ^~~~~~~~
+/home/david/esp/panel_matter/main/main.c:99:15: warning: unused variable 'subcard2' [-Wunused-variable]
+   99 |     lv_obj_t *subcard2 = subcard_create(card4, 110, 160, 100, 100); // sup. der.
+      |               ^~~~~~~~
+/home/david/esp/panel_matter/main/main.c:98:15: warning: unused variable 'subcard1' [-Wunused-variable]
+   98 |     lv_obj_t *subcard1 = subcard_create(card4, 0, 160, 100, 100); // sup. izq.
+      |               ^~~~~~~~
+/home/david/esp/panel_matter/main/main.c:94:15: warning: unused variable 'card3' [-Wunused-variable]
+   94 |     lv_obj_t *card3 = card_create(pantalla, 0, 320, 200, 120); // inf. izq
+      |               ^~~~~
+/home/david/esp/panel_matter/main/main.c:93:15: warning: unused variable 'card2' [-Wunused-variable]
+   93 |     lv_obj_t *card2 = card_create(pantalla, 0, 110, 200, 200); // centr. izq.
+      |               ^~~~~
+/home/david/esp/panel_matter/main/main.c:92:15: warning: unused variable 'card1' [-Wunused-variable]
+   92 |     lv_obj_t *card1 = card_create(pantalla, 0, 0, 200, 100); // sup. izq.
+      |               ^~~~~
+[14/35] Building C object esp-idf/espressif__button/CMakeFiles/__idf_espressif__button.dir/button_gpio.c.obj
+[15/35] Linking C static library esp-idf/lvgl/liblvgl.a
+[16/35] Building C object esp-idf/espressif__button/CMakeFiles/__idf_espressif__button.dir/button_adc.c.obj
+/home/david/components/espressif__button/button_adc.c: In function 'button_adc_init':
+/home/david/components/espressif__button/button_adc.c:198:13: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  198 |             .atten = ADC_BUTTON_ATTEN,
+      |             ^
+In file included from /home/david/esp/esp-idf/components/esp_adc/include/esp_adc/adc_oneshot.h:12,
+                 from /home/david/components/espressif__button/button_adc.c:13:
+/home/david/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+/home/david/components/espressif__button/button_adc.c:203:9: warning: 'ADC_ATTEN_DB_11' is deprecated [-Wdeprecated-declarations]
+  203 |         ret = adc_calibration_init(ADC_BUTTON_ADC_UNIT, ADC_BUTTON_ATTEN, &g_button.adc1_cali_handle);
+      |         ^~~
+/home/david/esp/esp-idf/components/hal/include/hal/adc_types.h:51:5: note: declared here
+   51 |     ADC_ATTEN_DB_11 __attribute__((deprecated)) = ADC_ATTEN_DB_12,  ///<This is deprecated, it behaves the same as `ADC_ATTEN_DB_12`
+      |     ^~~~~~~~~~~~~~~
+[17/35] Linking C static library esp-idf/main/libmain.a
+[18/35] Building C object esp-idf/usb_stream/CMakeFiles/__idf_usb_stream.dir/usb_host_helpers.c.obj
+[19/35] Generating ../../index_uvc.html.gz.S
+[20/35] Building ASM object esp-idf/xfer_http/CMakeFiles/__idf_xfer_http.dir/__/__/index_uvc.html.gz.S.obj
+[21/35] Building C object esp-idf/usb_stream/CMakeFiles/__idf_usb_stream.dir/descriptor.c.obj
+[22/35] Building C object esp-idf/espressif_esp_jpeg/CMakeFiles/__idf_espressif_esp_jpeg.dir/jpeg_decoder.c.obj
+[23/35] Linking C static library esp-idf/xfer_http/libxfer_http.a
+[24/35] Building C object esp-idf/espressif__button/CMakeFiles/__idf_espressif__button.dir/iot_button.c.obj
+[25/35] Linking C static library esp-idf/espressif_esp_jpeg/libespressif_esp_jpeg.a
+[26/35] Linking C static library esp-idf/espressif__button/libespressif__button.a
+[27/35] Building C object esp-idf/esp_jpeg/CMakeFiles/__idf_esp_jpeg.dir/src/audio_malloc.c.obj
+In file included from /home/david/components/esp_jpeg/src/audio_malloc.c:18:
+/home/david/esp/esp-idf/components/spi_flash/include/esp_spi_flash.h:6:2: warning: #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead [-Wcpp]
+    6 | #warning esp_spi_flash.h is deprecated, please use spi_flash_mmap.h instead
+      |  ^~~~~~~
+/home/david/components/esp_jpeg/src/audio_malloc.c:62:13: warning: 'adaptive_jpg_frame_buffer' defined but not used [-Wunused-function]
+   62 | static void adaptive_jpg_frame_buffer(size_t length)
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~
+/home/david/components/esp_jpeg/src/audio_malloc.c:59:17: warning: 'current_height' defined but not used [-Wunused-variable]
+   59 | static uint16_t current_height = 0;
+      |                 ^~~~~~~~~~~~~~
+/home/david/components/esp_jpeg/src/audio_malloc.c:58:17: warning: 'current_width' defined but not used [-Wunused-variable]
+   58 | static uint16_t current_width = 0;
+      |                 ^~~~~~~~~~~~~
+/home/david/components/esp_jpeg/src/audio_malloc.c:30:16: warning: 'draw_buf_index' defined but not used [-Wunused-variable]
+   30 | static uint8_t draw_buf_index = 0;
+      |                ^~~~~~~~~~~~~~
+[28/35] Building C object esp-idf/usb_stream/CMakeFiles/__idf_usb_stream.dir/usb_stream.c.obj
+[29/35] Linking C static library esp-idf/usb_stream/libusb_stream.a
+[30/35] Linking C static library esp-idf/esp_jpeg/libesp_jpeg.a
+[31/35] Generating ld/sections.ld
+[32/35] Building C object CMakeFiles/lvgl_demo.elf.dir/project_elf_src_esp32s3.c.obj
+[33/35] Linking CXX executable lvgl_demo.elf
+[34/35] Generating binary image from built executable
+esptool.py v4.8.1
+Creating esp32s3 image...
+Merged 2 ELF sections
+Successfully created esp32s3 image.
+Generated /home/david/esp/panel_matter/build/lvgl_demo.bin
+[35/35] cd /home/david/esp/panel_matter/build/esp-idf/esptool_py && /home/david/.espressif/python_env/idf5.2_py3.12_env/bin/python /home/david/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/david/esp/panel_matter/build/partition_table/partition-table.bin /home/david/esp/panel_matter/build/lvgl_demo.bin
+lvgl_demo.bin binary size 0x11c7e0 bytes. Smallest app partition is 0x2ee000 bytes. 0x1d1820 bytes (62%) free.

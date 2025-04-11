@@ -1,7 +1,7 @@
 {
     "version":            "1.1",
     "project_name":       "lvgl_demo",
-    "project_version":    "v0.4.1-2-g78ea4e1-dirty",
+    "project_version":    "v0.4.1-3-g1ecd6ae-dirty",
     "project_path":       "/home/david/esp/panel_matter",
     "idf_path":           "/home/david/esp/esp-idf",
     "build_dir":          "/home/david/esp/panel_matter/build",
@@ -186,7 +186,7 @@
             "type": "LIBRARY",
             "lib": "__idf_consultaApi",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_http_client" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "file": "/home/david/esp/panel_matter/build/esp-idf/consultaApi/libconsultaApi.a",
@@ -2764,7 +2764,7 @@
             "dir": "/home/david/esp/panel_matter/components/consultaApi",
             "lib": "__idf_consultaApi",
             "reqs": [],
-            "priv_reqs": [],
+            "priv_reqs": [ "esp_http_client" ],
             "managed_reqs": [],
             "managed_priv_reqs": [],
             "include_dirs": [ "." ]

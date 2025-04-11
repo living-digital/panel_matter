@@ -3,4 +3,6 @@ idf_component_register(
         "consultaApi.c"
     INCLUDE_DIRS 
         "."
+    PRIV_REQUIRES
+	esp_http_client
 )
