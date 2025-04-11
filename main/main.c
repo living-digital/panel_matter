@@ -20,6 +20,8 @@
 #include "ui/base_screen.h"
 #include "ui/card.h"
 #include "ui/subcard.h"
+#include "esp_timer.h"
+
 
 // conexión wifi
 #include "wifi_conect.h"
@@ -29,19 +31,9 @@
 
 
 // DEFINICIONES
-#define TIME_BUFFER_SIZE 16
 
 
 // FUNCIONES
- // Función para actualizar el label con la hora consultada en la API
- void update_time_display(lv_obj_t *lbl) {
-    char timeStr[TIME_BUFFER_SIZE];
-    if (get_time(timeStr, sizeof(timeStr)) == 0) {
-        lv_label_set_text(lbl, timeStr);
-    } else {
-        lv_label_set_text(lbl, "Error");
-    }
-}
 
 
 // MAIN
@@ -52,7 +44,7 @@ void app_main(void) {
     esp_err_t err;
     do {
         err = wifi_conect("MOVISTAR_606E", "111D3321BD3B5C34AA26",
-                          "192.168.18.250", "192.168.18.1", "255.255.255.0");
+                            "192.168.18.250", "192.168.18.1", "255.255.255.0");
         if (err != ESP_OK) {
             ESP_LOGW(TAG, "Error al intentar conectar (%d). Reintentando...", err);
             vTaskDelay(pdMS_TO_TICKS(1000));
@@ -93,54 +85,16 @@ void app_main(void) {
     lv_label_set_text(labelDate, "labelDate");
 
     // Crear labels dentro de card4
-    lv_obj_t *labelNET = lv_label_create(subcard5);
-    lv_obj_add_style(labelNET, &style_texto1, 0); 
-    lv_obj_align(labelNET, LV_ALIGN_TOP_LEFT, 0, 0);
-    lv_label_set_text(labelNET, "labelNET");
+    lv_obj_t *labelNet = lv_label_create(subcard5);
+    lv_obj_add_style(labelNet, &style_texto1, 0); 
+    lv_obj_align(labelNet, LV_ALIGN_TOP_LEFT, 0, 0);
+    lv_label_set_text(labelNet, "labelNet");
 
-    // BUCLE DE USO
-    int contador = 0;
-    int segundos = 0;
-    int minutos = 0;
-    int horas = 0;
-    while (1) {
-        //CADA SEGUNDO
-        contador++;
-        if (contador%10 == 0){
-            segundos++;
-            if (segundos==60){
-                segundos = 0;
-                minutos++;
-                if (minutos==60){
-                    minutos=0;
-                    horas++;
-                }
-            }
+    vTaskDelay(pdMS_TO_TICKS(500));  // retardo 
 
-            char time_str[16];
-            sprintf(time_str, "%d:%d:%d", horas, minutos, segundos);
-            ESP_LOGI(TAG, "%s", time_str);
+    ESP_LOGE(TAG, "Actualizado labelNet");
+    lv_label_set_text(labelNet, "LABELNET");
+    lv_event_send(labelNet, LV_EVENT_REFRESH, NULL); 
 
-        }
-
-        //CADA MINUTO
-        if (segundos%60==0 && contador%10==0){
-
-            // Muestra la hora
-            char time_str[16];
-            sprintf(time_str, "%d:%d", horas, minutos);
-            lv_label_set_text(labelClock, time_str);
-
-            // Consulta conexion internet
-            if (internet_connected_ip()){
-                lv_label_set_text(labelNET, "Internet");
-            } else {
-                lv_label_set_text(labelNET, "No conection");
-            }
-        }
-        
-        lv_task_handler();  // Maneja los eventos de LVGL
-        vTaskDelay(pdMS_TO_TICKS(100));  // Retardo de 10ms
-    }
 }
 
