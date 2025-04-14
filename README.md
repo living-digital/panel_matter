@@ -2,9 +2,13 @@
 Este proyecto permite conectar un ESP32 con display de 4" a una red WiFi, tambien trabajaremos con esp-matter (fork de Matter especifico para esta plataforma) para la conectividad de dispositivos IOT, todo ello con una interfaz generada con lvgl
 
 
-## Requisitos previos:
+## Requisitos software:
 
-ESP-IDF instalado (v5.0 o superior recomendado)
+ESP-IDF instalado v5.2.3
+
+LVGL v8.3.11
+
+## Requisitos Hardware
 
 Cable USB para flashear el ESP32
 

@@ -1,69 +1,75 @@
-#include "consultaApi.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "esp_http_client.h"
 #include "esp_log.h"
+#include "esp_http_client.h"
+#include "consultaApi.h"
 
-static const char *TAG = "consultaApi";
-
-/* Estructura para acumular la respuesta */
-typedef struct {
-    char *buffer;
-    size_t length;
-} consultaApiMemoryBlock;
-
-/* Callback de escritura para acumular la respuesta HTTP */
-static size_t http_event_handler(void *handler_args, char *data, size_t len)
-{
-    consultaApiMemoryBlock *mem = (consultaApiMemoryBlock *)handler_args;
-    char *ptr = realloc(mem->buffer, mem->length + len + 1);
-    if (ptr == NULL) {
-        ESP_LOGE(TAG, "No hay suficiente memoria (realloc retornó NULL)");
-        return 0; // Retorna 0 para indicar error; la petición se abortará
-    }
-    mem->buffer = ptr;
-    memcpy(&(mem->buffer[mem->length]), data, len);
-    mem->length += len;
-    mem->buffer[mem->length] = '\0';  // Asegurar la terminación nula
-    return len;
-}
+#define TAG "consultaApi"
+#define API_BUFFER_SIZE 1024
 
 char *consultaApiGet(const char *url)
 {
-    // Inicializar estructura para almacenar la respuesta
-    consultaApiMemoryBlock mem;
-    mem.length = 0;
-    mem.buffer = malloc(1);  // Inicialización con 1 byte
-    if (mem.buffer == NULL) {
-        ESP_LOGE(TAG, "Error al asignar memoria inicial");
+    ESP_LOGI(TAG, "Consulta a: %s", url);
+
+    if (url == NULL) {
+        ESP_LOGE(TAG, "URL no válida");
         return NULL;
     }
-    mem.buffer[0] = '\0';
 
-    // Configuración del cliente HTTP
+    // Configuración del cliente HTTP sin buffer_size, sin cert_pem, HTTP por puerto 80
     esp_http_client_config_t config = {
         .url = url,
-        .event_handler = http_event_handler,
-        .user_data = &mem, // Puntero a nuestra estructura para acumular datos
-        // Opcional: se pueden configurar tiempos de espera, etc.
+        .method = HTTP_METHOD_GET,
+        .timeout_ms = 5000
     };
 
+    // Inicializa el cliente con la config. indicada arriba
     esp_http_client_handle_t client = esp_http_client_init(&config);
     if (client == NULL) {
-        ESP_LOGE(TAG, "Error al inicializar el cliente HTTP");
-        free(mem.buffer);
+        ESP_LOGE(TAG, "No se pudo inicializar el cliente HTTP");
         return NULL;
     }
-    
-    esp_err_t err = esp_http_client_perform(client);
-    if (err != ESP_OK) {
-        ESP_LOGE(TAG, "Error en la petición HTTP: %s", esp_err_to_name(err));
-        esp_http_client_cleanup(client);
-        free(mem.buffer);
-        return NULL;
+
+    // Abre la conexión HTTP sin realizar lectura automática del cuerpo
+    esp_err_t err = esp_http_client_open(client, 0);
+
+    char *buffer = NULL;
+
+    if (err == ESP_OK) {
+        // Longitud del msg indicada por el servidor
+        int content_length = esp_http_client_fetch_headers(client);
+        ESP_LOGI(TAG, "Content-Length reportado por servidor: %d Bytes", content_length);
+
+        // indicamos espacio para buffer en memoria
+        buffer = malloc(API_BUFFER_SIZE);
+        if (buffer == NULL) {
+            ESP_LOGE(TAG, "No se pudo reservar memoria para la respuesta");
+            esp_http_client_cleanup(client);
+            return NULL;
+        }
+
+        // Obtiene la longitud real del msg
+        int len = esp_http_client_read_response(client, buffer, API_BUFFER_SIZE - 1);
+        ESP_LOGI(TAG, "Content-Length leídos: %d Bytes", len);
+
+        if (len > 0) {
+            buffer[len] = '\0';
+            ESP_LOGI(TAG, "Respuesta API: %s , len=%d", buffer, len);
+        } else if (len == 0) {
+            ESP_LOGW(TAG, "La longitud del mensaje es 0 Bytes, eso es lamentable.");
+            free(buffer);
+            buffer = NULL;
+        } else {
+            ESP_LOGE(TAG, "Error al leer la respuesta: %d", len);
+            free(buffer);
+            buffer = NULL;
+        }
+
+    } else {
+        ESP_LOGE(TAG, "Error al abrir conexión HTTP: %s", esp_err_to_name(err));
     }
 
     esp_http_client_cleanup(client);
-    return mem.buffer; // Se retorna la respuesta; el usuario debe hacer free() de la cadena
+    return buffer;
 }

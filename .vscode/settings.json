@@ -6,8 +6,9 @@
         "string.h": "c",
         "base_screen.h": "c",
         "sockets.h": "c",
-        "time_api_client.h": "c"
+        "time_api_client.h": "c",
+        "stdio.h": "c"
     },
-    "idf.pythonInstallPath": "/home/david/.espressif/python_env/idf5.3_py3.12_env/bin/python",
+    "idf.pythonInstallPath": "/home/david/.espressif/python_env/idf5.2_py3.12_env/bin/python",
     "C_Cpp.errorSquiggles": "disabled"
 }
