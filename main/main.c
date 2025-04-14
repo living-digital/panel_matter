@@ -80,7 +80,7 @@ void app_main(void) {
     const char *url = "http://devel.livingdigitalsolutions.com/admin/datetime";
     char *response = consultaApiGet(url);
     if (response) {
-        ESP_LOGD(TAG, "Respuesta API: %s", response);
+        ESP_LOGI(TAG, "RESPUESTA API: %s", response);
         // Aquí podrías parsear el JSON para extraer el campo "datetime"
         free(response);  // Liberar la memoria asignada en consultaApiGet
     } else {
