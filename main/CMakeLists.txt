@@ -15,4 +15,5 @@ idf_component_register(
         spiffs
         wifi_conect
 	consultaApi
+	jsonWorker
 )

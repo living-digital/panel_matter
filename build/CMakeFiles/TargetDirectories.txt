@@ -698,6 +698,13 @@
 /home/david/esp/panel_matter/build/esp-idf/consultaApi/CMakeFiles/install.dir
 /home/david/esp/panel_matter/build/esp-idf/consultaApi/CMakeFiles/install/local.dir
 /home/david/esp/panel_matter/build/esp-idf/consultaApi/CMakeFiles/install/strip.dir
+/home/david/esp/panel_matter/build/esp-idf/jsonWorker/CMakeFiles/__idf_jsonWorker.dir
+/home/david/esp/panel_matter/build/esp-idf/jsonWorker/CMakeFiles/edit_cache.dir
+/home/david/esp/panel_matter/build/esp-idf/jsonWorker/CMakeFiles/rebuild_cache.dir
+/home/david/esp/panel_matter/build/esp-idf/jsonWorker/CMakeFiles/list_install_components.dir
+/home/david/esp/panel_matter/build/esp-idf/jsonWorker/CMakeFiles/install.dir
+/home/david/esp/panel_matter/build/esp-idf/jsonWorker/CMakeFiles/install/local.dir
+/home/david/esp/panel_matter/build/esp-idf/jsonWorker/CMakeFiles/install/strip.dir
 /home/david/esp/panel_matter/build/esp-idf/main/CMakeFiles/__idf_main.dir
 /home/david/esp/panel_matter/build/esp-idf/main/CMakeFiles/edit_cache.dir
 /home/david/esp/panel_matter/build/esp-idf/main/CMakeFiles/rebuild_cache.dir

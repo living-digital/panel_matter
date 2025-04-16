@@ -29,6 +29,10 @@
 // Consultas a API (consultaApiGet se define en consultaApi.c, con su header consultaApi.h)
 #include "consultaApi.h"
 
+// Tareas con JSON
+#include "json_worker.h"
+
+
 /*
 ESP_LOGE(TAG, "Este es un mensaje de ERROR");
 ESP_LOGW(TAG, "Este es un mensaje de ADVERTENCIA");
@@ -80,12 +84,11 @@ void app_main(void) {
     // 2. Realizar consulta a la API
     const char *url = "http://devel.livingdigitalsolutions.com/admin/datetime";
     char *response = consultaApiGet(url);
-    if (response) {
-        ESP_LOGI(TAG, "RESPUESTA API: %s", response);
-        // Aquí podrías parsear el JSON para extraer el campo "datetime"
-        free(response);  // Liberar la memoria asignada en consultaApiGet
+    
+    if (jsonIsValid(response)) {
+        ESP_LOGI(TAG, "El JSON es válido");
     } else {
-        ESP_LOGE(TAG, "Error al consultar la API");
+        ESP_LOGE(TAG, "El JSON NO es válido");
     }
 
     // 3. Inicializar LVGL y la UI
