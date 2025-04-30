@@ -15,6 +15,9 @@ git checkout v5.2.3    # Cambiar a versión etiquetada v5.2.3, git mueve el punt
 git submodule update --init --recursive   # Inicializar y actualizar todos los submódulos
 ```
 Instalaremos IDF:
+
+Si IDF estaba instalado previamente sera necesario eliminar .espressif de home.
+
 ```
 ./install.sh
 . ./export.sh
