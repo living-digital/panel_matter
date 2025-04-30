@@ -1,7 +1,0 @@
-[1/4] cd /home/david/esp/panel_matter/build/esp-idf/esptool_py && /home/david/.espressif/python_env/idf5.2_py3.12_env/bin/python /home/david/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 partition --type app /home/david/esp/panel_matter/build/partition_table/partition-table.bin /home/david/esp/panel_matter/build/lvgl_demo.bin
-lvgl_demo.bin binary size 0x1369e0 bytes. Smallest app partition is 0x2ee000 bytes. 0x1b7620 bytes (59%) free.
-[2/4] Performing build step for 'bootloader'
-[1/1] cd /home/david/esp/panel_matter/build/bootloader/esp-idf/esptool_py && /home/david/.espressif/python_env/idf5.2_py3.12_env/bin/python /home/david/esp/esp-idf/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x0 /home/david/esp/panel_matter/build/bootloader/bootloader.bin
-Bootloader binary size 0x5950 bytes. 0x26b0 bytes (30%) free.
-[3/4] No install step for 'bootloader'
-[4/4] Completed 'bootloader'

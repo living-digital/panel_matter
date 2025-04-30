@@ -1,18 +1,12 @@
 idf_component_register(
-    SRCS
-        "main.c"
-        "ui/base_screen.c"
-        "ui/card.c"
-        "ui/subcard.c"
-        "ui/ui_styles.c"
+    SRC_DIRS
+    "."
+    
     INCLUDE_DIRS
-        "include"
-        "ui"
-    PRIV_REQUIRES
-        lvgl
-        bsp
-        lv_port
-        spiffs
-        wifi_conect
-	consultaApi
-)
+    "include"
+    )
+
+
+# spiffs_create_partition_image(storage ../spiffs FLASH_IN_PROJECT)
+
+

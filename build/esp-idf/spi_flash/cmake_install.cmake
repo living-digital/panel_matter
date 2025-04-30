@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/esp/esp-idf/components/spi_flash
+# Install script for directory: /home/david/components/spi_flash
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

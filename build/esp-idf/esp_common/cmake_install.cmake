@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/esp/esp-idf/components/esp_common
+# Install script for directory: /home/david/components/esp_common
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

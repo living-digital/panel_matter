@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/esp/esp-idf/components/touch_element
+# Install script for directory: /home/david/components/touch_element
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

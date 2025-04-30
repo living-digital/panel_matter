@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/esp/esp-idf/components/lwip
+# Install script for directory: /home/david/components/lwip
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

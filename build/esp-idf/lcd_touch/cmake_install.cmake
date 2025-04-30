@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/components/lcd_touch
+# Install script for directory: /home/david/esp/panel_matter/components/lcd_touch
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/esp/esp-idf/components/sdmmc
+# Install script for directory: /home/david/components/sdmmc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

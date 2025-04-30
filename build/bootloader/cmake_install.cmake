@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/esp/esp-idf/components/bootloader/subproject
+# Install script for directory: /home/david/components/bootloader/subproject
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

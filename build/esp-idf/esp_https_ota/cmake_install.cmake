@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/esp/esp-idf/components/esp_https_ota
+# Install script for directory: /home/david/components/esp_https_ota
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

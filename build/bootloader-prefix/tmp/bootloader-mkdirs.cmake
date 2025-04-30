@@ -4,7 +4,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 file(MAKE_DIRECTORY
-  "/home/david/esp/esp-idf/components/bootloader/subproject"
+  "/home/david/components/bootloader/subproject"
   "/home/david/esp/panel_matter/build/bootloader"
   "/home/david/esp/panel_matter/build/bootloader-prefix"
   "/home/david/esp/panel_matter/build/bootloader-prefix/tmp"

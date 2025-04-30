@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/esp/esp-idf/components/esp_coex
+# Install script for directory: /home/david/components/esp_coex
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

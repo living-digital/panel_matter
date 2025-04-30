@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/esp/esp-idf/components/cmock
+# Install script for directory: /home/david/components/cmock
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/esp/esp-idf/components/log
+# Install script for directory: /home/david/components/log
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

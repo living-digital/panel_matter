@@ -1,4 +1,4 @@
-# Install script for directory: /home/david/components/bsp
+# Install script for directory: /home/david/esp/panel_matter/components/bsp
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
