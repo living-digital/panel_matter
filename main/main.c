@@ -1,6 +1,8 @@
 // FreeRTOS
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+// Conexión WiFi
+#include "wifi_conect.h"
 // biblioteca principal de LVGL (LittlevGL)
 #include "lvgl.h"
 // configuraciones y la inicialización de parámetros específicos de la placa de hardware
@@ -10,6 +12,45 @@
 
 void app_main(void)
 {
+    const char *TAG = "MAIN";
+
+    // 1. Conectar a WiFi
+    esp_err_t err;
+    do {
+        err = wifi_conect("MOVISTAR_606E", 
+                          "111D3321BD3B5C34AA26",
+                          "192.168.18.250", 
+                          "192.168.18.1", 
+                          "255.255.255.0", 
+                          "8.8.8.8");
+        if (err != ESP_OK) {
+            ESP_LOGW(TAG, "Error al intentar conectar (%d). Reintentando...", err);
+            vTaskDelay(pdMS_TO_TICKS(1000));
+        }
+    } while (err != ESP_OK);
+
+    ESP_LOGW(TAG, "Pausa para estabilidad en conexion wifi.");
+    vTaskDelay(pdMS_TO_TICKS(5000));
+
+    // Verificar conexión WiFi e Internet
+    if (wifi_conect_is_connected()){
+        ESP_LOGW(TAG, "Conexion wifi OK.");
+    } else {
+        ESP_LOGW(TAG, "Error al conectar a wifi.");
+    }
+
+    if (internet_connected_ip()){
+        ESP_LOGW(TAG, "Acceso a internet OK (IP).");
+    } else {
+        ESP_LOGW(TAG, "Error en acceso a internet (IP).");
+    }
+
+    if (internet_connected_dns()){
+        ESP_LOGW(TAG, "Acceso a internet OK (DNS).");
+    } else {
+        ESP_LOGW(TAG, "Error en acceso a internet (DNS).");
+    }
+
     // inicialización del hardware y lvgl
     sys_int();
     lvgl_init();
@@ -48,8 +89,7 @@ void app_main(void)
 // #include "ui/subcard.h"
 // #include "esp_timer.h"
 
-// // Conexión WiFi
-// #include "wifi_conect.h"
+
 
 // // Consultas a API (consultaApiGet se define en consultaApi.c, con su header consultaApi.h)
 // #include "consultaApi.h"
@@ -65,42 +105,7 @@ void app_main(void)
 // void app_main(void) {
 //     const char *TAG = "MAIN";
 
-//     // 1. Conectar a WiFi
-//     esp_err_t err;
-//     do {
-//         err = wifi_conect("MOVISTAR_606E", 
-//                           "111D3321BD3B5C34AA26",
-//                           "192.168.18.250", 
-//                           "192.168.18.1", 
-//                           "255.255.255.0", 
-//                           "8.8.8.8");
-//         if (err != ESP_OK) {
-//             ESP_LOGW(TAG, "Error al intentar conectar (%d). Reintentando...", err);
-//             vTaskDelay(pdMS_TO_TICKS(1000));
-//         }
-//     } while (err != ESP_OK);
 
-//     ESP_LOGW(TAG, "Pausa para estabilidad en conexion wifi.");
-//     vTaskDelay(pdMS_TO_TICKS(5000));
-
-//     // Verificar conexión WiFi e Internet
-//     if (wifi_conect_is_connected()){
-//         ESP_LOGW(TAG, "Conexion wifi OK.");
-//     } else {
-//         ESP_LOGW(TAG, "Error al conectar a wifi.");
-//     }
-
-//     if (internet_connected_ip()){
-//         ESP_LOGW(TAG, "Acceso a internet OK (IP).");
-//     } else {
-//         ESP_LOGW(TAG, "Error en acceso a internet (IP).");
-//     }
-
-//     if (internet_connected_dns()){
-//         ESP_LOGW(TAG, "Acceso a internet OK (DNS).");
-//     } else {
-//         ESP_LOGW(TAG, "Error en acceso a internet (DNS).");
-//     }
 
 //     // 2. Realizar consulta a la API
 //     const char *url = "http://devel.livingdigitalsolutions.com/admin/datetime";
